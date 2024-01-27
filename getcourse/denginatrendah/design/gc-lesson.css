@@ -1,0 +1,1231 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.aliot-nld.gc-main-content {
+    position: relative;
+    background: #162432;
+}
+
+.aliot-nld.gc-main-content > .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100%;
+}
+
+.aliot-nld .standard-logo {
+    margin: 0 !important;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    background: #0E1D2B;
+}
+
+.aliot-nld .breadcrumb {
+    margin: 0 !important;
+    padding: 0 30px 10px;
+    background: #0E1D2B;
+}
+
+.aliot-nld .breadcrumb a {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    color: #918B9D;
+}
+
+.aliot-nld .empty-breadcrumbs {
+    background: #0E1D2B;
+}
+
+.aliot-nld .page-header {
+    margin: 0 !important;
+    padding: 0 30px 20px !important;
+    background: #0E1D2B;
+    border: none;
+}
+
+.aliot-nld.gc-main-content h1 {
+    margin-top: 0;
+}
+
+.aliot-nld.gc-main-content h1 a {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.aliot-nld .center-block {
+    max-width: 100% !important;
+}
+
+.aliot-nld .lite-page.block-set {
+    margin: 60px 0 0 70px;
+}
+
+.aliot-nld .lt-block-wrapper .container {
+    max-width: 950px;
+    margin-left: 30px !important;
+}
+
+.aliot-nld .lt-lesson-comment-block .lt-block-wrapper .container,
+.aliot-nld .lt-lesson-mission-block .lt-block-wrapper .container {
+    max-width: 1120px;
+}
+
+.aliot-nld .image-box {
+    text-align: center;
+}
+
+.aliot-nld .image-box img {
+    border-radius: 20px;
+}
+
+.aliot-nld .f-text {
+    padding: 0 20px 30px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.aliot-nld p a {
+    color: #7D5CE5;
+    border-bottom: 1px solid #7D5CE5;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.aliot-nld p a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+@media (max-width:1280px) {
+    .aliot-nld.gc-main-content .container {
+        width: inherit !important;
+    }
+
+    .aliot-nld .lite-page.block-set {
+        margin: 0;
+    }
+}
+
+@media (max-width:1110px) {
+    .aliot-nld .lt-block-wrapper .container {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 766px) {
+    .aliot-nld .standard-logo {
+        display: block;
+    }
+
+    .aliot-nld.gc-main-content h1 {
+        margin-right: 15px !important;
+    }
+}
+
+@media (max-width:760px) {
+
+    .aliot-nld .page-header {
+        padding: 0 15px;
+    }
+
+    .aliot-nld .page-header h1 {
+        margin: 0 !important;
+    }
+}
+
+
+/* Шапка урока */
+.aliot-nld .lesson-header-block.row-section {
+    position: relative;
+    padding-bottom: 10px !important;
+    min-height: 251px;
+    background: #0E1D2B !important;
+    border-bottom: 1px solid #463E58 !important;
+}
+
+.aliot-nld .lesson-header-block .col-md-12 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px 30px 10px !important;
+    max-width: 1120px;
+}
+
+.aliot-nld .lesson-header-block .col-md-12::before {
+    content: url("https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/215/h/ecada501c5d06ad03a84e84173b5c402.png");
+    position: absolute;
+    bottom: -160px;
+    right: 0;
+}
+
+.aliot-nld .lesson-header-block .col-md-12.changed::before {
+    bottom: -136px;
+}
+
+
+.aliot-nld .lesson-header-block .col-md-12 span:not(.lesson-description-value) {
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    color: var(--cS);
+}
+
+.aliot-nld .lesson-header-block .lesson-title-value {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 10px;
+    max-width: 600px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    text-align: left;
+    background: -o-linear-gradient(312.14deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+    background: linear-gradient(137.86deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 15px 20px 0;
+}
+
+.aliot-nld .lesson-header-block .lesson-description-value {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    display: block;
+    margin-bottom: 0;
+    max-width: 500px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 5px 20px 0;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation {
+    position: relative;
+    padding-left: 20px;
+    color: #414141;
+    font-size: 14px !important;
+    z-index: 100;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation td {
+    margin: 70px 10px 20px;
+    width: inherit;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation td.text-center {
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation td.text-center div {
+    display: none;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation a {
+    background: #7D5CE5;
+    color: #fff;
+    padding: 3px 15px;
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation a:hover {
+    background: #CD07D9;
+    color: #fff;
+    text-decoration: none;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation td.text-center {
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    left: 50px;
+    text-align: left;
+    font-family: 'Oswald';
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #918B9D;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation td.text-center div {
+    display: inline-block;
+    font-family: 'Oswald';
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #918B9D;
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation td:nth-child(1) a:before {
+    content: " ";
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation .text-right a:after {
+    content: " ";
+}
+
+.aliot-nld .lesson-header-block .lesson-navigation div.hidden-xs {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    .aliot-nld .lesson-header-block .col-md-12::before {
+        display: none;
+    }
+    
+    .aliot-nld .lesson-header-block .lesson-title-value,
+    .aliot-nld .lesson-header-block .lesson-description-value {
+        max-width: 100% !important;
+        
+    }
+}
+
+@media (max-width:768px) {
+    .aliot-nld .aliot-nld .lesson-header-block .lesson-navigation a {
+        padding: 3px 5px;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-description-value {
+        max-width: 270px;
+    }
+
+    .aliot-nld .flex-container.wrap-col {
+        -ms-flex-flow: nowrap !important;
+            flex-flow: nowrap !important;
+    }
+
+    .aliot-nld .lesson-header-block.row-section::before {
+        width: 400px;
+        background-position: lef top;
+    }
+}
+
+@media (max-width:600px) {
+    .aliot-nld .lesson-header-block.row-section::before {
+        display: none;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-description-value {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-description-value b {
+        font-size: 24px !important;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-navigation a {
+        padding: 3px 10px;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-title-value {
+        padding: 15px 0 0;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-navigation td {
+        margin: 10px;
+        padding-left: 0 !important;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-navigation .text-right a {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:400px) {
+    .aliot-nld .lesson-header-block .lesson-navigation tr td:nth-child(1) a {
+        margin-right: 40px;
+    }
+    .aliot-nld .lesson-header-block .lesson-navigation tr td:nth-child(3) {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width:375px) {
+    .aliot-nld .lesson-header-block .col-md-12::before {
+        width: 200px;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-navigation td {
+        margin-bottom: 10px;
+    }
+
+    .aliot-nld .lesson-header-block .lesson-description-value {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width:320px) {
+    .aliot-nld .lesson-header-block .lesson-title-value {
+        font-size: 30px;
+    }
+}
+
+/* Заголовок */
+.aliot-nld .lt-lesson-header .modal-block-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+.aliot-nld .header.f-lesson-header-1,
+.aliot-nld .nld-msg-block .f-header {
+    position: relative;
+    padding: 15px 20px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 10px;
+    background: -o-linear-gradient(312.14deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+    background: linear-gradient(137.86deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+    overflow: hidden;
+}
+
+.aliot-nld .nld-msg-block .f-header {
+    border-radius: 0 !important;
+}
+
+.aliot-nld .nld-msg-block .modal-block-content {
+    margin-left: 15px;
+    padding: 0;
+    width: calc(100% - 30px);
+    background: rgba(125, 92, 229, 0.1);
+    border: 2px solid #CD07D9;
+    border-radius: 5px;
+}
+
+.aliot-nld .nld-msg-block .f-header {
+    border-radius: 5px 5px 0 0;
+}
+
+.aliot-nld .nld-msg-block .f-text {
+    padding: 10px 20px 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+/* Блок видео */
+.aliot-nld .clearfix.videoWrapper,
+.aliot-nld .vhi-root {
+    margin: 20px 0 30px !important;
+}
+
+.aliot-nld .clearfix.videoWrapper iframe,
+.aliot-nld .vhi-root iframe {
+    margin-bottom: 30px !important;
+    border-radius: 20px;
+}
+
+.aliot-nld .vhe-cdn-change {
+    display: none !important;
+}
+
+/* Кнопки */
+.aliot-nld .nld-btns button {
+    padding: 7px 30px !important;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 22px !important;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: url("https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/310/h/fb68c73a1ebf9c8286b3ee8f8461b0e9.png") !important;
+    background-size: cover !important;
+    
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.aliot-nld .nld-btns button:hover {
+    background: url("https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/121/h/9821f761038985db82b58adf509f95bb.png") no-repeat center !important;
+    background-size: cover !important;
+    -webkit-transform: translatey(-10px);
+        -ms-transform: translatey(-10px);
+            transform: translatey(-10px);
+}
+
+.aliot-nld .nld-btns .nld-alter-link {
+    position: relative;
+}
+
+.aliot-nld .nld-btns .nld-alter-link p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.aliot-nld .nld-btns .nld-alter-link p a {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.aliot-nld .nld-btns .nld-alter-link::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+        -ms-transform: translatex(-50%);
+            transform: translatex(-50%);
+    width: 90px;
+    height: 2px;
+    background: #CD07D9;
+}
+
+/* Блок Разделитель */
+.aliot-nld .lt-separator .lt-block-wrapper {
+    background: none !important;
+}
+
+.aliot-nld .lt-separator hr {
+    margin: 45px !important;
+    padding: 0;
+    width: 95%;
+    max-width: 920px !important;
+    text-align: center;
+    border: none;
+    border-top: 2px solid #463E58;
+    overflow: visible;
+}
+
+.aliot-nld .lt-separator hr:after {
+    content: url("https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/52/h/4846ae4a0302c395d3faa04d87586638.png");
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    -webkit-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+            transform: translatey(-50%);
+    padding: 0 10px;
+    background: #162432;
+}
+
+@media (max-width:992px) {
+    .aliot-nld .lt-separator hr {
+        width: inherit;
+    }
+}
+
+/* Файлы */
+
+.aliot-nld .lt-lesson-files .lt-block-wrapper {
+    padding-bottom: 0;
+}
+
+.aliot-nld .table {
+    margin-bottom: 0 !important;
+}
+
+.aliot-nld .table.files-table tr {
+    display: block;
+    position: relative;
+    /*margin: 10px;*/
+    width: inherit;
+    border: 2px solid #7D5CE5;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.aliot-nld .table.files-table tr::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--cD);
+}
+
+.aliot-nld .table.files-table tr:hover {
+    -webkit-transform: translatey(-5px);
+        -ms-transform: translatey(-5px);
+            transform: translatey(-5px);
+}
+
+.aliot-nld .table.files-table td {
+    border: none;
+    height: auto !important;
+    padding: 10px !important;
+}
+
+.aliot-nld .table.files-table tr td:nth-child(1) {
+    position: relative;
+    padding: 30px 20px !important;
+    background: #7D5CE5;
+}
+
+.aliot-nld .table.files-table tr td:nth-child(1)::before {
+    content: url("https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/256/h/68c178b627ffac96349fae60ab3bd476.png");
+}
+
+.aliot-nld .table.files-table tr td:nth-child(1) div {
+    display: none;
+}
+
+.aliot-nld .table.files-table tr td:nth-child(2) {
+    position: relative;
+    width: 120px !important;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.aliot-nld .table.files-table tr td:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+            transform: translatey(-50%);
+    width: 1px;
+    height: 70%;
+    background: #fff;
+}
+
+.aliot-nld .table.files-table tr td:nth-child(3) {
+    vertical-align: middle;
+    padding-left: 40px !important;
+}
+
+.aliot-nld .table.files-table tr td:nth-child(3) a {
+    color: #fff;
+    text-decoration: none !important;
+    font-size: 1.2em;
+    display: block;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+@media (max-width:425px) {
+    .aliot-nld .table.files-table tr {
+        padding: 5px;
+    }
+    
+    .aliot-nld .table.files-table tr td:nth-child(2)::before {
+        display: none;
+    }
+    
+    .aliot-nld .table.files-table tr td:nth-child(1) {
+        display: none;
+    }
+    .aliot-nld .table.files-table tr td:nth-child(2) {
+        display: block;
+        vertical-align: top;
+        padding-top: 15px;
+        width: inherit !important;
+        opacity: .5;
+        text-align: left;
+    }
+    
+    .aliot-nld .table.files-table tr td:nth-child(3) {
+        padding-left: 10px !important;
+    }
+
+    .aliot-nld .table.files-table tr td:nth-child(3) a {
+        word-break: break-word;
+    }
+}
+
+/* Блок ДЗ */
+.aliot-nld .lt-lesson-mission-block {
+    max-width: 950px;
+}
+
+.aliot-nld .lt-lesson-mission-block .container,
+.aliot-nld .lt-lesson-comment-block .container {
+    padding: 0 !important;
+}
+
+.aliot-nld .lt-lesson-mission-block h3 {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(125, 92, 229, 0.1);
+    border: 1px solid #CD07D9;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+}
+
+.aliot-nld .lt-lesson-mission-block h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 4px;
+    width: 120px;
+    background: #CD07D9;
+}
+
+.aliot-nld .lesson-mission-text {
+    margin-top: 1px;
+    padding-bottom: 25px !important;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: rgba(125, 92, 229, 0.1);
+    border: 0;
+    border-left: 1px solid #CD07D9;
+    border-right: 1px solid #CD07D9;
+}
+
+.aliot-nld .lt-lesson-mission-block .lesson-mission-wrapper {
+    margin-top: -1px;
+    border: 0;
+}
+
+.aliot-nld #lessonAnswerForm {
+    margin-top: -7px;
+    padding: 10px;
+    background: -o-linear-gradient(312.14deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+    background: linear-gradient(137.86deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+    border-radius: 10px;
+}
+
+.aliot-nld .lt-lesson-mission-block .answer-form {
+    background: transparent;
+    position: relative;
+}
+
+@media (max-width:425px) {
+    .aliot-nld .lt-lesson-mission-block .answer-form::after {
+        display: none;
+    }
+}
+
+.aliot-nld #lessonanswer-answer_text {
+    position: relative;
+    z-index: 10;
+}
+
+.aliot-nld .user-profile-image {
+    border-radius: 100px;
+    border: 4px solid #F0F0F0;
+}
+
+.aliot-nld .field-lessonanswer-answer_text .uploadifive-button {
+    background: rgba(255,255,255,.3);
+    color: #fff;
+}
+
+.aliot-nld .answer-form .addfield {
+    color: #fff;
+}
+
+.aliot-nld .aliot-nld .answer-form .addfield input,
+.aliot-nld .answer-form .addfield .type-float,
+.aliot-nld .answer-form .addfield textarea,
+.aliot-nld .answer-form .addfield .type-currency,
+.aliot-nld .answer-form .addfield .type-string {
+    color: #000 !important;
+}
+
+.aliot-nld .addfield-type-file .small,
+.aliot-nld .addfield-type-file_list .small {
+    color: #fff;
+}
+
+.answer-form .addfield .type-string {
+    width: 100%;
+}
+
+.aliot-nld .lt-lesson-mission-block .btn-send-answer,
+.aliot-nld #showMoreAnswers,
+.aliot-nld .lt-lesson-comment-block .simple-answer .btn-send {
+    background-color: #fff;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #CD07D9;
+    border: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 12px 30px;
+}
+
+.aliot-nld .lt-lesson-mission-block .btn-save-draft {
+    border: 1px solid #fff;
+    padding: 12px 30px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.aliot-nld .answer-form .answer-textarea-container {
+    width: 100%;
+}
+
+.aliot-nld .lt-lesson-mission-block .btn-send-answer:hover,
+.aliot-nld .lt-lesson-mission-block .btn-save-draft:hover,
+.aliot-nld .lt-lesson-comment-block .simple-answer .btn-send:hover {
+    -webkit-transform: translatey(-5px);
+        -ms-transform: translatey(-5px);
+            transform: translatey(-5px);
+}
+
+.aliot-nld .lt-lesson-mission-block #user_hide_answer,
+.aliot-nld .lt-lesson-mission-block label {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1060px) {
+    .aliot-nld .lt-lesson-mission-block {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:425px) {
+    .aliot-nld .btn-save-draft {
+        margin-top: 10px !important;
+        margin-left: 0 !important;
+    }
+
+    .aliot-nld .lesson-answers-title .pull-right {
+        width: 100%;
+        display: block;
+    }
+
+    .aliot-nld .flex-container.wrap-col {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-flow: row wrap !important;
+                flex-flow: row wrap !important;
+    }
+
+    .aliot-nld .lesson-mission-text {
+        margin: 0;
+    }
+}
+
+@media (max-width:375px) {
+    .btn-save-draft {
+        margin-top: 10px;
+    }
+}
+
+/* Тестирование */
+
+.aliot-nld div[style="padding-left: 20px; padding-bottom: 20px; padding-top: 20px;"] {
+    padding: 0 0 0 20px !important;
+}
+
+.aliot-nld .testing-widget {
+    margin: 0 0 0 -20px;
+    padding: 0px 0 40px;
+    background: rgba(125, 92, 229, 0.1);
+    border: 0;
+    border-left: 1px solid #CD07D9;
+    border-right: 1px solid #CD07D9;
+    border-bottom: 1px solid #CD07D9;
+    border-radius: 0 0 10px 10px;
+}
+
+.aliot-nld .lt-lesson-mission-block .testing-widget h3 {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-transform: none;
+}
+
+.aliot-nld .question-number,
+.aliot-nld .question-multi-answers-hint,
+.aliot-nld .question-title-big,
+.aliot-nld .stat-title,
+.aliot-nld .stat-str,
+.aliot-nld .fsz-14px {
+    color: #fff;
+}
+
+.aliot-nld .question-data.row {
+    padding: 0 !important;
+}
+
+.aliot-nld .testing-widget .btn-restart {
+    background: #CD07D9;
+    border-radius: 0;
+    border: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.aliot-nld .testing-widget .btn-restart:hover {
+    background: #7D5CE5;
+}
+
+.aliot-nld .testing-widget .question-title-big {
+    text-align: center;
+    font-weight: bold;
+}
+
+.aliot-nld .testing-widget .js__btn-variant {
+    border-radius: 5px;
+}
+
+.aliot-nld .testing-widget .btn-default.js__btn-variant {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    background: rgba(0,0,0,.2);
+    border: none !important;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.aliot-nld .testing-widget .btn-mark-variant:before {
+    color: #7D5CE5;
+}
+
+.aliot-nld .testing-widget .js__btn-variant.btn-success {
+    background: #1EB182 !important;
+    color: #fff !important;
+}
+
+.aliot-nld .testing-widget .js__btn-variant.btn-danger {
+    background: #8D4D4D !important;
+    color: #fff !important;
+}
+
+.aliot-nld .testing-widget .btn-send-variant {
+    font-family: 'Montserrat';
+    background: #7D5CE5;
+    border: none;
+    border-radius: 3px !important;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.aliot-nld .testing-widget .btn-send-variant:hover {
+    background: #CD07D9;
+    color: #fff;
+}
+
+.aliot-nld .testing-widget .btn-restart {
+    color: #fff !important;
+}
+
+
+/* Блок ответов и комментариев */
+
+.aliot-nld .type-mission_answer {
+    padding: 0 20px;
+    border-top: 0 !important;
+    border: 1px solid #CD07D9;
+    background: rgba(125, 92, 229, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+.aliot-nld .type-mission_answer .title {
+    color: #fff;
+}
+
+.aliot-nld .type-mission_answer .title a {
+    font-family: 'Oswald';
+    font-weight: 600;
+    color: #fff;
+}
+
+.aliot-nld .type-mission_answer .emoji-text {
+    color: #fff;
+}
+
+.aliot-nld .type-mission_answer .answer-content .b-like-and-subscribe-notifications span {
+    color: #7D5CE5 !important;
+    border-bottom: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.aliot-nld .type-mission_answer .answer-content .b-like-and-subscribe-notifications span:hover {
+    color: #fff !important;
+}
+
+.aliot-nld .type-mission_answer .answer-content .answer-status a {
+    color: #918B9D;
+}
+
+.aliot-nld .lt-lesson-comment-block {
+    max-width: 950px;
+}
+
+.aliot-nld .lt-lesson-comment-block .lesson-answers-title {
+    width: 100%;
+    background: #7D5CE5;
+    padding: 10px 20px;
+    border: none !important;
+    color: #fff;
+}
+
+.aliot-nld .lt-lesson-comment-block .lesson-answers-title h3 {
+    margin-bottom: 0 !important;
+    padding: 5px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.aliot-nld .lt-lesson-comment-block .lesson-answers-title a {
+    padding: 0 5px 0 0;
+    text-decoration: none;
+    color: #0E1D2B;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.aliot-nld .lt-lesson-comment-block .lesson-answers-title a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.aliot-nld .lesson-answers-title .pull-right {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.aliot-nld .lt-lesson-comment-block .simple-answer {
+    background: rgba(125, 92, 229, 0.1);
+    border: 2px solid #7D5CE5;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.aliot-nld .answer-main-content .addfield,
+.aliot-nld .self-answers .comments-container .lesson-answer-comment {
+    color: #fff;
+    background: rgba(125, 92, 229, 0.1) !important;
+    border: 1px solid #7D5CE5;
+    border-radius: 5px;
+}
+
+.aliot-nld .self-answers .comments-container .lesson-answer-comment {
+    padding: 20px 10px 0;
+}
+
+.aliot-nld .self-answers .comments-tree .worker .text {
+    color:  #fff;
+}
+
+.aliot-nld .lt-lesson-comment-block .simple-answer .user-image img {
+    border-radius: 40px;
+    border: 4px solid #F0F0F0;
+    margin-top: -5px;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer {
+    background: rgba(125, 92, 229, 0.1);
+    border: 2px solid #7D5CE5;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px !important;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .user-profile-image {
+    border-radius: 50px;
+    border: 1px solid var(--cM);
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .answer-content .text,
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .answer-content .answer-date a {
+    color: #fff;
+    font-family: 'Oswald';
+    font-weight: 600;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .comment.lesson-answer-comment {
+    background: rgba(125, 92, 229, 0.1) !important;
+    border: 1px solid #7D5CE5;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .answer-content .answer-status a {
+    color: #918B9D;
+}
+
+.aliot-nld .user-answer.status-accepted .answer-status .answer-status-label {
+    background: #7D5CE5 !important;
+    color: #fff;
+}
+
+.aliot-nld .user-answer.status-declined .answer-status .answer-status-label {
+    background: #E51111 !important;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .answer-text {
+    margin-top: 20px;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .answer-files img {
+    border: 1px solid #7D5CE5;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .answer-files img:hover {
+    -webkit-transform: scale(1.03,1.03);
+        -ms-transform: scale(1.03,1.03);
+            transform: scale(1.03,1.03);
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .answer-content .b-like-and-subscribe-notifications span {
+    color: #7D5CE5 !important;
+    border-bottom: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .answer-content .b-like-and-subscribe-notifications span:hover {
+    color: #fff !important;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .lesson-answer-comment {
+    padding: 10px;
+    background: #ffffff !important;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+}
+
+.aliot-nld .lt-lesson-comment-block .btn.btn-primary.btn-send,
+.aliot-nld .type-mission_answer .active .btn-send {
+    padding: 10px 30px;
+    background: #7D5CE5;
+    border: 0;
+    color: #fff;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.aliot-nld .lt-lesson-comment-block .btn.btn-primary.btn-send:hover {
+    -webkit-transform: translatey(-5px);
+        -ms-transform: translatey(-5px);
+            transform: translatey(-5px);
+}
+
+.aliot-nld .lt-lesson-comment-block .btn.btn-primary.btn-send .text {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+
+.aliot-nld .comment-form-wrapper .new-comment-textarea {
+    color: #000 !important;
+}
+
+.aliot-nld .lt-lesson-comment-block .answers-list .user-answer .comment.lesson-answer-comment .emoji-text.text-content.edit-comment-inactive-element {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 1060px) {
+    .aliot-nld .lt-lesson-comment-block {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:425px) {
+    .aliot-nld .lt-lesson-comment-block .lesson-answers-title h3 {
+        padding: 0 0 10px 0!important;
+    }
+}

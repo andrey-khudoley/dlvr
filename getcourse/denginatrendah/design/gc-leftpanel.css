@@ -1,0 +1,458 @@
+/*-- [ALIOT] Переменные --*/
+:root {
+	--cm: #0E1D2B;
+	--cma: #CD07D9;
+	--csb: #0E1D2B;
+	--iSite: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/271/h/5b492f9613bde878bc7fcf737d0bf787.png");
+	--iStudy: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/168/h/89a6b8381c793882d5ab66f4e08acf90.png");
+	--iUsers: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/263/h/ca7c3fd9c358e6b782ae548497bd46a6.png");
+	--iTasks: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/155/h/cd84eade7267b3a79590e96426007fb0.png");
+	--iMessages: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/201/h/37730d9189f9480731cf0cecad93ba7a.png");
+	--iSales: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/436/h/66b4acde893deca37ff825ab72ac5ba7.png");
+	--iChatium: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/60/h/38eb5d17bc8a90759f9e62608a371250.png");
+	--iSubmenuBG: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/380/h/d49aaecc0ced65040ecac861923f6c8c.png");
+	--iSiteSA: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/263/h/53d5fe7a9f77d4f82a5bec1848a4e555.png");
+	--iStudySA: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/227/h/1e212d9bbc622479aa4423eb18a2fbd8.png");
+	--iProlong: url ("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/277/h/a790d06446c79bac1f52e6cd32bd3a1c.png");
+	--iUsersSA: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/339/h/bfac6ce3aa946f962ad6f5184b6a32e4.png");
+	--iTasksSA: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/444/h/bb3e91c0c7f2f1dfc877df646a71fede.png");
+	--iMessagesSA: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/191/h/7b4830fa3b6fff130493cbe2ca187474.png");
+	--iSalesSA: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/294/h/8f494307cc6f62b743dd2dba8aa1fb69.png");
+	--iChatiumSA: url("https://fs.getcourse.ru/fileservice/file/download/a/537760/sc/440/h/72db4e94b7e2f9eb64dcd0d588a2ecac.png");
+}
+
+/*-- [ALIOT]/[left-panel] боковая панель — начало --*/
+
+.gc-main-content.with-left-menu {
+	margin-left: 90px;
+}
+
+.gc-account-leftbar {
+	background: var(--cm);
+	border-right: 1px solid #463E58;
+}
+
+.gc-account-leftbar,
+.gc-account-leftbar .gc-account-user-menu li a {
+	width: 90px!important;
+}
+
+.gc-account-user-menu {
+    padding-top: 10px !important;
+}
+
+.menu-item-profile {
+	position: relative;
+
+}
+
+.menu-item-profile .menu-item-icon {
+	position: relative;
+	width: 50px;
+	border: 3px solid #111627;
+	border-radius: 100px;
+}
+
+.gc-account-leftbar .gc-account-user-menu li {
+	position: relative;
+	margin: 4px 0;
+	border-bottom: none;
+}
+
+.gc-account-leftbar .gc-account-user-menu li a {
+	position: relative;
+	display: block;
+	padding-top: 7px;
+	text-align: center;
+	width: 90px!important;
+	height: 60px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	background: transparent;
+	z-index: 100;
+}
+
+.gc-account-leftbar .gc-account-user-menu li a:hover {
+	background: transparent;
+	border-radius: 5px;
+}
+
+.gc-account-leftbar .gc-account-user-menu li::before {
+	content: "";
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translatex(-50%) translatey(-50%);
+	-ms-transform: translatex(-50%) translatey(-50%);
+	transform: translatex(-50%) translatey(-50%);
+	width: 34px;
+	height: 34px;
+	background: rgba(129, 88, 229, 0.2);
+	opacity: 0;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	z-index: 1;
+}
+
+.gc-account-leftbar .gc-account-user-menu li:hover::before {
+	opacity: 1;
+}
+
+.gc-account-leftbar .gc-account-user-menu li.active::before,
+.gc-account-leftbar .gc-account-user-menu li.selected::before {
+	opacity: 1;
+}
+
+.gc-account-leftbar .gc-account-user-menu li.active a {
+	background: transparent;
+}
+
+.gc-account-leftbar .gc-account-user-menu li.selected a {
+	background: transparent;
+}
+
+.gc-account-leftbar.notify-count {
+	left: 10px!important;
+}
+
+.gc-account-user-menu li a:before {
+	display: block;
+	text-align: center;
+	max-width: calc(100% + 20px);
+	min-height: 1em;
+	width: calc(100% + 20px);
+	overflow: hidden;
+	position: relative;
+	margin: 2px -10px 0;
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #C4C4C4;
+	position: absolute;
+	bottom: 16px;
+	left: 0;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.gc-account-user-menu li.menu-item-cms a:before {
+	content: "Сайт";
+}
+
+.gc-account-user-menu li.menu-item-teach a:before {
+	content: "Обучение";
+}
+
+.gc-account-user-menu li.menu-item-prolongation a:before {
+	content: "Продление";
+}
+
+.gc-account-user-menu li.menu-item-user a:before {
+	content: "Пользователи";
+}
+
+.gc-account-user-menu li.menu-item-tasks a:before {
+	content: "Задачи";
+}
+
+.gc-account-user-menu li.menu-item-notifications a:before {
+	content: "Сообщения";
+}
+
+.gc-account-user-menu li.menu-item-sales a:before {
+	content: "Продажи";
+}
+
+.gc-account-user-menu li.menu-item-chatium a:before {
+	content: "Приложение";
+}
+
+.gc-account-user-menu li.menu-item-cms a:hover::before,
+.gc-account-user-menu li.menu-item-teach a:hover::before,
+.gc-account-user-menu li.menu-item-prolongation a:hover::before,
+.gc-account-user-menu li.menu-item-user a:hover::before,
+.gc-account-user-menu li.menu-item-tasks a:hover::before,
+.gc-account-user-menu li.menu-item-notifications a:hover::before,
+.gc-account-user-menu li.menu-item-sales a:hover::before,
+.gc-account-user-menu li.menu-item-chatium a:hover::before {
+	color: #8158E5;
+}
+
+.gc-account-user-menu li.menu-item-cms.active a::before,
+.gc-account-user-menu li.menu-item-teach.active a::before,
+.gc-account-user-menu li.menu-item-prolongation.active a::before,
+.gc-account-user-menu li.menu-item-user.active a::before,
+.gc-account-user-menu li.menu-item-tasks.active a::before,
+.gc-account-user-menu li.menu-item-notifications.active a::before,
+.gc-account-user-menu li.menu-item-chatium.active a::before {
+	color: #8158E5;
+}
+
+.gc-account-user-menu li.menu-item-cms.selected a::before,
+.gc-account-user-menu li.menu-item-teach.selected a::before,
+.gc-account-user-menu li.menu-item-prolongation.selected a::before,
+.gc-account-user-menu li.menu-item-user.selected a::before,
+.gc-account-user-menu li.menu-item-tasks.selected a::before,
+.gc-account-user-menu li.menu-item-notifications.selected a::before,
+.gc-account-user-menu li.menu-item-chatium.selected a::before {
+	color: #8158E5;
+}
+
+.gc-account-leftbar .gc-account-user-submenu-bar {
+	margin-left: 20px !important;
+	background: var(--csb);
+	background-image: var(--iSubmenuBG);
+	background-size: 100%;
+	background-repeat: no-repeat !important;
+	background-position: bottom !important;
+}
+
+.gc-account-user-submenu-bar h3 {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.gc-account-leftbar .gc-account-user-submenu-bar div.user-balance {
+    color: #fff;
+}
+
+a.subitem-link {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li {
+	position: realtive;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li::before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	bottom: 6px;
+	left: 20px;
+	width: 0;
+	height: 0;
+	background: var(--cma);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li:hover::before {
+	width: 21%;
+	height: 2px;
+}
+
+.gc-account-leftbar .gc-account-user-submenu-bar li.menu-item-accountSettings a {
+	border-top: none;
+}
+
+.gc-account-leftbar .gc-account-user-submenu-bar li.menu-item-help a {
+	border-top: none;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li a {
+	position: relative !important;
+	padding-right: 40px;
+	z-index: 9999;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #C4C4C4;
+	text-transform: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li a:hover {
+	z-index: 1;
+	font-weight: 600;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none !important;
+	background: transparent;
+}
+.gc-account-leftbar a.toggle-link {
+    position: relative;
+    z-index: 9999;
+}
+
+.gc-account-leftbar a.toggle-link::before {
+	content: "";
+	position: absolute !important;
+	top: 5px;
+	left: 5px;
+	width: 35px !important;
+	height: 35px !important;
+	background-image: url("https://img.icons8.com/ios-filled/35/918B9D/xbox-menu.png") !important;
+	background-size: cover !important;
+    z-index: 9999;
+}
+
+.menu-item-notifications_button_small img.menu-item-icon,
+.menu-item-cms img.menu-item-icon,
+.menu-item-user img.menu-item-icon,
+.menu-item-tasks img.menu-item-icon,
+.menu-item-teach img.menu-item-icon,
+.menu-item-notifications img.menu-item-icon,
+.menu-item-sales img.menu-item-icon,
+.menu-item-chatium img.menu-item-icon {
+	display: none !important;
+}
+
+li.menu-item.menu-item-notifications_button_small a,
+li.menu-item.menu-item-cms a,
+li.menu-item.menu-item-teach a,
+li.menu-item.menu-item-user a,
+li.menu-item.menu-item-tasks a,
+li.menu-item.menu-item-notifications a,
+li.menu-item.menu-item-sales a,
+li.menu-item.menu-item-chatium a {
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu a .notify-count {
+	right: 10px !important;
+   
+}
+
+.menu-item-notifications_button_small  a .notify-count {
+    bottom: 10px !important;
+    right: 28px !important; 
+    z-index: 1000;
+}
+
+li.menu-item.menu-item-notifications_button_small a::after {
+	content: url("https://img.icons8.com/ios-glyphs/18/ffffff/bell.png") !important;
+    position: relative;
+    top: -3px;
+}
+
+.no-notifications-message {
+    color: #fff;
+}
+
+li.menu-item.menu-item-cms a::after {
+	content: var(--iSite) !important;
+}
+
+li.menu-item.menu-item-teach a::after {
+	content: var(--iStudy) !important;
+}
+
+li.menu-item.menu-item-user a::after {
+	content: var(--iUsers) !important;
+}
+
+li.menu-item.menu-item-tasks a::after {
+	content: var(--iTasks) !important;
+	position: relative;
+	top: 3px;
+}
+
+li.menu-item.menu-item-notifications a::after {
+	content: var(--iMessages) !important;
+	position: relative;
+	top: 3px;
+}
+
+li.menu-item.menu-item-sales a::after {
+	content: var(--iSales) !important;
+}
+
+li.menu-item.menu-item-chatium a::after {
+	content: var(--iChatium) !important;
+	position: relative;
+	top: 3px;
+}
+
+li.menu-item.menu-item-cms.selected a::after,
+li.menu-item.menu-item-cms.active a::after {
+	content: var(--iSiteSA) !important;
+}
+
+li.menu-item.menu-item-teach.selected a::after,
+li.menu-item.menu-item-teach.active a::after {
+	content: var(--iStudySA) !important;
+}
+
+li.menu-item.menu-item-prolong.selected a::after,
+li.menu-item.menu-item-prolong.active a::after {
+	content: var(--iProlong) !important;
+}
+
+li.menu-item.menu-item-user.selected a::after,
+li.menu-item.menu-item-user.active a::after {
+	content: var(--iUsersSA) !important;
+}
+
+li.menu-item.menu-item-tasks.selected a::after,
+li.menu-item.menu-item-tasks.active a::after {
+	content: var(--iTasksSA) !important;
+	position: relative;
+	top: 0;
+}
+
+li.menu-item.menu-item-notifications.selected a::after,
+li.menu-item.menu-item-notifications.active a::after {
+	content: var(--iMessagesSA) !important;
+	position: relative;
+	top: 0;
+}
+
+li.menu-item.menu-item-sales.selected a::after,
+li.menu-item.menu-item-sales.active a::after {
+	content: var(--iSalesSA) !important;
+}
+
+li.menu-item.menu-item-chatium.selected a::after,
+li.menu-item.menu-item-chatium.active a::after {
+	content: var(--iChatiumSA) !important;
+}
+
+@media (max-width: 768px) {
+	.gc-account-leftbar .gc-account-user-menu {
+        
+		background: var(--cm);
+		width: inherit;
+	}
+
+	.gc-account-leftbar .toggle-link {
+		background: var(--cm) !important;
+	}
+
+	.gc-account-leftbar .without-icon img {
+		display: none;
+	}
+
+	.gc-account-leftbar .toggle-link {
+        display: block;
+        width: 100%;
+        position: fixed !important;
+	}
+
+	.gc-account-leftbar a.toggle-link::before {
+		position: relative;
+		left: 10px;
+	}
+}
+
+/*-- [ALIOT]/[left-panel] боковая панель — конец --*/

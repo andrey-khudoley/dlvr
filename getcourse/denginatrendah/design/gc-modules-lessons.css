@@ -1,0 +1,415 @@
+/*-- [ALIOT]/[module-list] список модулей — начало --*/
+
+.nd-list .stream-table {
+    margin: 0 0 30px !important;
+}
+
+.xdget-trainingList .col-md-12 {
+    padding: 0 !important;
+}
+
+.nd-list .stream-table tr {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0 !important;
+    height: 100%;
+    background: rgba(125, 92, 229, 0.1);
+    border: 2px solid #7D5CE5;
+    border-radius: 5px;
+}
+
+.nd-list .stream-table tr td {
+    display: block;
+    padding: 0 !important;
+    height: 100%;
+}
+
+.nd-list .stream-table tr td:hover {
+    background: none;
+}
+
+.nd-list .stream-table tr td a {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: url(https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/176/h/0306a1e36edeb170d7d0dd982a5d0272.png) no-repeat bottom right;
+    background-size: 105%;
+    transition: all .3s;
+}
+
+.nd-list .stream-table tr:hover td a {
+    position: relative;
+    background: url(https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/294/h/6ef1d8ec0cfc45336d63e80ceb5745d2.png) no-repeat bottom right;
+    background-size: 105%;
+}
+
+.nd-list .stream-table tr td .stream-img {
+    position: relative;
+    flex: 0 1 85px;
+    margin: 20px 0 20px 20px;
+    width: 85px;
+    height: 85px;
+    background: #7D5CE5;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px rgba(142, 109, 240, 0.2);
+    transition: all .3s;
+}
+
+.nd-list .stream-table tr td .stream-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatey(-50%) translatex(-50%);
+}
+
+.nd-list .stream-table tr:hover td .stream-img {
+    background: #fff;
+}
+
+.nd-list .stream-table tr:hover td .stream-img img {
+    filter: invert(46%) sepia(74%) saturate(3912%) hue-rotate(232deg) brightness(91%) contrast(96%);
+}
+
+.nd-list .stream-table tr td .stream-title {
+    position: relative;
+    flex: 1 1 calc(100% - 170px);
+    padding: 55px 20px 15px 30px;
+}
+
+.nd-list .stream-table tr td .stream-title .t-one {
+    display: block;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.nd-list .stream-table tr td .stream-title .t-second {
+    display: block;
+    padding-right: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    opacity: 0.75;
+}
+
+.nd-list .stream-table tbody tr td a div {
+	padding-top: 10px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	color: rgba(255,255,255,.75);
+}
+
+.nd-list .stream-table tbody tr td a div b {
+	position: absolute;
+	top: 20px;
+        left: 30px;
+	padding: 5px 15px;
+	font-family: 'Oswald';
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: -o-linear-gradient(312.14deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+	background: linear-gradient(137.86deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+}
+
+.nd-list .stream-table tbody tr:hover td a div b {
+	background: #fff;
+	color: #CD07D9;
+}
+
+@media (max-width: 550px) {
+    .nd-list .stream-table tr td a {
+        background-size: cover !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .nd-list .stream-table tr td .stream-title {
+        padding-left: 15px !important;
+    }
+	
+	.nd-list .stream-table tbody tr td a div b {
+		left: 15px;
+	}
+    
+    .nd-list .stream-table tr td .stream-title .t-second {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .nd-list .stream-table tr td a {
+        padding: 20px;
+    }
+    
+    .nd-list .stream-table tr td .stream-img {
+        display: none;
+    }
+    
+    .nd-list .stream-table tr td .stream-title {
+        flex: 1 1 100%;
+        padding-left: 0 !important; 
+        padding-bottom: 0;
+    }
+    
+    .nd-list .stream-table tbody tr td a div b {
+        top: 10px;
+		left: 0px;
+    }
+}
+
+/*-- [ALIOT]/[module-list] список модулей — конец --*/
+
+/*-- [ALIOT]/[lesson-list] список уроков — начало --*/
+.nd-block .lesson-list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    padding: 0 !important;
+    margin: 0 0 30px !important;
+    background: none;
+}
+
+.nd-block .lesson-list li {
+    position: relative;
+    flex: 1 1 45%;
+    margin: 0 !important;
+    max-width: calc(100% / 2 - 10px);
+    background: #0E1D2B !important;
+    border: 2px solid #7D5CE5;
+    border-radius: 0;
+    transition: all .3s;
+}
+
+.nd-block .lesson-list li:hover {
+    background: #7D5CE5 !important;
+}
+
+.nd-block .lesson-list li .hidden-xs {
+    display: none;
+}
+
+.nd-block .lesson-list li a,
+.nd-block .lesson-list li a .info {
+    background: none !important;
+    border: 0 !important;
+}
+
+.nd-block .lesson-list li a {
+    padding: 10px 20px 0;
+}
+
+.nd-block .lesson-list li.with-image a {
+    padding: 0;
+}
+
+.nd-block .lesson-list li a .vmiddle {
+    position: relative;
+    padding-right: 0 !important;
+}
+
+.nd-block .lesson-list li a .vmiddle::after {
+    display: block;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nd-block .lesson-list li a .user-state-label {
+    font-family: 'Roboto';
+    font-weight: 300 !important;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #B39BFF !important;
+    opacity: 0.75;
+}
+
+.nd-block .lesson-list li a .info {
+    margin: 0 !important;
+    border: 0 !important;
+}
+
+.nd-block .lesson-list li a .item-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 120px;
+}
+
+.nd-block .lesson-list li a .title {
+    padding: 0 20px 10px 0;
+}
+
+.nd-block .lesson-list li a .t-one {
+    display: block;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.nd-block .lesson-list li a .t-second {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    opacity: .75;
+}
+
+.nd-block .lesson-list li a .description {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    opacity: .30;
+}
+
+.nd-block .lesson-list li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+} 
+
+.nd-block .lesson-list li::after {
+    position: absolute;
+    top: calc(50% + 4px);
+    left: 10px;
+    transform: translatey(-50%);
+}
+
+.nd-block .lesson-list li.user-state-has_mission,
+.nd-block .lesson-list li.user-state-answered,
+.nd-block .lesson-list li.user-state-accomplished,
+.nd-block .lesson-list li.user-state-need_accomplish {
+    padding-left: 40px;
+}
+
+.nd-block .lesson-list li.user-state-has_mission::before,
+.nd-block .lesson-list li.user-state-answered::before,
+.nd-block .lesson-list li.user-state-accomplished::before,
+.nd-block .lesson-list li.user-state-need_accomplish::before {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.nd-block .lesson-list li.user-state-has_mission::before,
+.nd-block .lesson-list li.user-state-answered::before,
+.nd-block .lesson-list li.user-state-accomplished::before {
+    background: #7D5CE5;
+}
+
+/* Есть ДЗ */
+.nd-block .lesson-list li.user-state-has_mission::after {
+    content: url(https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/109/h/76b8d2bbf2943b19834947c60a34ae68.png);
+}
+
+.nd-block .lesson-list li.user-state-has_mission a .vmiddle::after {
+    content: "Есть задание";
+}
+
+.nd-block .lesson-list li .info .vmiddle div:not([class]) {
+    display: none;
+}
+
+/* ДЗ на проверке*/
+.nd-block .lesson-list li.user-state-answered::before {
+    opacity: 1;
+}
+.nd-block .lesson-list li.user-state-answered::after {
+    content: url(https://fs.getcourse.ru/fileservice/file/download/a/77034/sc/393/h/e45fbfef9d0b96e86c2cab9bad802075.png);
+}
+
+.nd-block .lesson-list li.user-state-answered a .vmiddle::after {
+    content: "Задание на проверке";
+}
+
+/* ДЗ принято */
+.nd-block .lesson-list li.user-state-accomplished::after {
+    content: url(https://fs.getcourse.ru/fileservice/file/download/a/77034/sc/97/h/9aa504a38339cc039c8f7404c5e660b5.png);
+}
+.nd-block .lesson-list li.user-state-accomplished::before {
+    opacity: 1;
+}
+
+.nd-block .lesson-list li.user-state-accomplished a .vmiddle::after {
+    content: "Задание выполнено";
+}
+
+/* Стоп-урок*/
+.nd-block .lesson-list li.user-state-need_accomplish {
+    border-color: #CD07D9;
+}
+.nd-block .lesson-list li.user-state-need_accomplish .user-state-label {
+    display: none;
+}
+.nd-block .lesson-list li.user-state-need_accomplish::after {
+    content: url(https://fs.getcourse.ru/fileservice/file/download/a/77034/sc/154/h/58522eef587276caf042b45eafa69055.png);
+}
+.nd-block .lesson-list li.user-state-need_accomplish::before {
+    background: #CD07D9;
+    opacity: 1;
+}
+.nd-block .lesson-list li.user-state-need_accomplish:hover {
+    background: #CD07D9 !important;
+}
+
+.nd-block .lesson-list li.user-state-need_accomplish a .vmiddle::after {
+    content: "Стоп-урок (необходимо выполнить задание)";
+}
+
+/* Урок не доступен */
+.nd-block .lesson-list li.user-state-not_reached {
+    border-color: #463E58;
+}
+.nd-block .lesson-list li.user-state-not_reached:hover {
+    background: inherit !important;
+}
+.nd-block .lesson-list li.user-state-not_reached .user-state-label {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.75);
+}
+.nd-block .lesson-list li.user-state-not_reached .title,
+.nd-block .lesson-list li.user-state-not_reached .description {
+    opacity: .25;
+}
+
+@media (max-width:760px) {
+    .nd-block .lesson-list li {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .nd-block .lesson-list li .info .vmiddle {
+        margin-left: 0;
+    }
+}
+/*-- [ALIOT]/[lesson-list] список уроков — начало --*/
