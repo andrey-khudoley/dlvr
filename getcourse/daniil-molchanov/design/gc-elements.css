@@ -1,0 +1,284 @@
+/*-- [ALIOT]/[elements] элементы оформления — начало --*/
+.talks-widget-button {
+    background: linear-gradient(137.86deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+}
+
+/* Заголовки */
+.nd-header,
+.xdget-lessonSchedule h3 {
+	position: relative;
+	margin-bottom: 35px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+}
+
+.nd-header::before,
+.xdget-lessonSchedule h3::before {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	height: 4px;
+	width: 120px;
+	background: #db05e8;
+}
+
+/* Актуальные события */
+.bg-block.schedule-block {
+	margin-bottom: 30px;
+	background: #0E1D2B;
+	border: 1px solid #7D5CE5;
+}
+
+.day {
+	margin-bottom: 20px !important;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #7D5CE5;
+}
+
+.day:last-child {
+	margin-bottom: 0 !important;
+	padding-bottom: 0;
+	border: none;
+}
+
+.day-label {
+	margin: 0 0 15px 0 !important;
+	padding: 2px 0px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.day-label::after {
+	content: "";
+	float: right;
+	margin-top: 0px;
+	width: 15px;
+	height: 15px;
+	background-image: url(https://img.icons8.com/material/15/7D5CE5/calendar--v1.png);
+	background-repeat: no-repeat;
+}
+
+.record {
+	padding-left: 0 !important;
+}
+
+.schedule-block .time {
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+}
+
+.schedule-block .event a {
+	font-family: 'Oswald';
+	font-weight: 600;
+	font-size: 16px;
+	color: #FFFFFF;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.schedule-block .event a:hover {
+	color: #CD07D9;
+	text-decoration: none;
+}
+
+.schedule-block .event {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	color: #FFFFFF75;
+}
+
+/* Режим поддержки */
+.supportTime .html-content {
+	padding: 20px;
+	margin-bottom: 20px;
+	background: -o-linear-gradient(338.32deg, #7D5CE5 0%, #B39BFF 100%);
+	background: linear-gradient(111.68deg, #7D5CE5 0%, #B39BFF 100%);
+	border: 1px solid #463E58;
+	color: #fff;
+}
+
+.supportTime .html-content p.supportHeader {
+	margin-bottom: 0;
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.supportTime .html-content p.supportHeader2 {
+	padding: 20px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: rgba(255,255,255,.75);
+}
+
+.supportTime .html-content p.supportHeader2 strong {
+	color: #fff;
+}
+
+.supportTime .html-content p.supportBudni {
+	margin: 7px 0;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.supportTime .html-content p.supportLink a {
+	display: block;
+	background: #fff;
+	color: #CD07D9;
+	padding: 7px 30px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	border-radius: 0px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.supportTime .html-content p.supportLink a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #0E1D2B;
+}
+/* Шапка тренинга */
+.head-block {
+	position: relative;
+	padding-left: 30px;
+	background: #0E1D2B;
+	border-bottom: 1px solid #463E58;
+}
+
+.head-block .hb-text .html-content {
+	padding: 100px 0 100px 350px;
+    background: url(https://fs.getcourse.ru/fileservice/file/download/a/63650/sc/210/h/9d5853c345ee6fdebddf91e323925443.png) no-repeat left bottom
+}
+
+.head-block .hb-text .html-content .hb-header {
+	margin-bottom: 10px;
+    max-width: 380px;
+	font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.head-block .hb-text .html-content .grad {
+	background: linear-gradient(137.86deg, #CD07D9 0.83%, #7D5CE5 94.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.head-block .hb-text .html-content .hb-description {
+	max-width: 380px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.head-block .hb-text .html-content .hb-description strong {
+	color: #fff;
+}
+
+.head-block .hb-photo {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1170px;
+	text-align: right;
+}
+
+@media (max-width:1280px) {
+    .head-block .hb-text .html-content {
+        padding-left: 0;
+        background: none;
+    }
+    
+    .head-block .hb-text .html-content .hb-header {
+        max-width: 460px;
+    }
+    
+    .head-block .hb-text .html-content .hb-description {
+        max-width: 500px;
+    }
+    
+	.head-block .hb-photo {
+		width: 100%;
+	}
+}
+
+@media (max-width:992px) {
+    .head-block .hb-text .html-content {
+        padding: 70px 0;
+    }
+    
+    .head-block .hb-text .html-content .hb-header {
+        max-width: 370px;
+    }
+    
+    .head-block .hb-text .html-content .hb-description {
+        max-width: 380px;
+    }
+    
+	.head-block .hb-photo img {
+		width: 350px;
+	}
+}
+
+@media (max-width:760px) {
+	.head-block {
+		padding: 0 30px;
+	}
+
+	.head-block .hb-text .html-content {
+		padding: 20px 0 40px;
+	}
+
+	.head-block .hb-photo {
+		position: inherit;
+		text-align: center;
+	}
+}
+
+@media (max-width: 380px) {
+	.head-block .hb-text .html-content .hb-header {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 325px) {
+	.head-block .hb-text .html-content .hb-header {
+		font-size: 26px;
+	}
+}
+/*-- [ALIOT]/[elements] элементы оформления — конец --*/
