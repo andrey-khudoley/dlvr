@@ -1,0 +1,5 @@
+@media (min-width:768px) {
+  .with-left-menu .resp-screen {
+      left: 88px !important;
+  }
+}
