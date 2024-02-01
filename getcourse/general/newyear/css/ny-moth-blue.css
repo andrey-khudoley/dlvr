@@ -1,0 +1,57 @@
+.logo-link img {margin-top: 20px;opacity: 0;}
+.ny_balls{position: absolute;top: 0px;left: 0px; width: 100%;overflow: hidden;z-index: 999;}
+.main-page-block .page-header {margin-top: 45px;}
+.b-head-decor{display:none}
+.b-page_newyear .b-head-decor{display:block;height:115px;width:100vw;overflow:hidden;background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/204/h/f245d46bb69068f59715c2ccbda8d067.png") repeat-x 0 0}
+.b-page_newyear .b-head-decor__inner{position:absolute;top:0;left:0;height:115px;display:block;width:373px}
+.b-page_newyear .b-head-decor::before{content:'';display:block;position:absolute;top:-115px;left:0;z-index:3;height:115px;display:block;width:100%;box-shadow:0 15px 30px rgba(0,0,0,0.75)}
+.b-page_newyear .b-head-decor__inner_n2{left:373px}
+.b-page_newyear .b-head-decor__inner_n3{left:746px}
+.b-page_newyear .b-head-decor__inner_n4{left:1119px}
+.b-page_newyear .b-head-decor__inner_n5{left:1492px}
+.b-page_newyear .b-head-decor__inner_n6{left:1865px}
+.b-page_newyear .b-head-decor__inner_n7{left:2238px}
+.b-ball{position:absolute}
+.b-ball_n1{top:0;left:3px;width:59px;height:83px}
+.b-ball_n2{top:-19px;left:51px;width:55px;height:70px}
+.b-ball_n3{top:9px;left:88px;width:49px;height:67px}
+.b-ball_n4{top:0;left:133px;width:57px;height:102px}
+.b-ball_n5{top:0;left:166px;width:49px;height:57px}
+.b-ball_n6{top:6px;left:200px;width:54px;height:70px}
+.b-ball_n7{top:0;left:240px;width:56px;height:67px}
+.b-ball_n8{top:0;left:283px;width:54px;height:53px}
+.b-ball_n9{top:10px;left:321px;width:49px;height:66px}
+.b-ball_n1 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/59/h/7947932b9dc080d611b4e26b1d98078b.png") no-repeat}
+.b-ball_n2 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/70/h/0849480d9c5c47d6664df4e33593b5f1.png") no-repeat}
+.b-ball_n3 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/44/h/0f07130a576185f31ee2cc22957f7c32.png") no-repeat}
+.b-ball_n4 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/47/h/ce760877d585a0a0ff842309205ac632.png") no-repeat}
+.b-ball_n5 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/63/h/d388696cad3f31325e915f67855eb022.png") no-repeat}
+.b-ball_n6 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/305/h/a152bc1f1db244981aec441a4cbad51b.png") no-repeat}
+.b-ball_n7 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/342/h/bd5f22c4ad67e96cfad26ccb7628536a.png") no-repeat}
+.b-ball_n8 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/118/h/4e44e53200898972e53de77ad0cc697f.png") no-repeat}
+.b-ball_n9 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/289/h/d7019936109dddb92e3ad3ae0a66de9b.png") no-repeat}
+.b-ball_i1 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/180/h/1035a60beb8eb42b692838b9dabb5205.png") no-repeat}
+.b-ball_i2 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/141/h/211bc8be8f16b284ce85206c72542ae6.png") no-repeat}
+.b-ball_i3 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/239/h/14c4848aac3f0b47724c7cc33358dfeb.png") no-repeat}
+.b-ball_i4 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/97/h/8190ec67c3656c7b28671303075abbfb.png") no-repeat}
+.b-ball_i5 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/258/h/9073fff3848318a82894eba59bf6baba.png") no-repeat}
+.b-ball_i6 .b-ball__i{background:url("https://fs.getcourse.ru/fileservice/file/download/a/2739/sc/65/h/545e599761a09dfa896a000c55961de6.png") no-repeat}
+.b-ball_i1{top:0;left:0;width:25px;height:71px}
+.b-ball_i2{top:0;left:25px;width:61px;height:27px}
+.b-ball_i3{top:0;left:176px;width:29px;height:31px}
+.b-ball_i4{top:0;left:205px;width:50px;height:51px}
+.b-ball_i5{top:0;left:289px;width:78px;height:28px}
+.b-ball_i6{top:0;left:367px;width:6px;height:69px}
+.b-ball__i{position:absolute;width:100%;height:100%;transform-origin:50% 0;transition:all .3s ease-in-out;pointer-events:none}
+.b-ball_bounce .b-ball__right{position:absolute;top:0;right:0;left:50%;bottom:0;z-index:9}
+.b-ball_bounce:hover .b-ball__right{display:none}
+.b-ball_bounce .b-ball__right:hover{left:0;display:block!important}
+.b-ball_bounce.bounce>.b-ball__i{transform:rotate(-9deg)}
+.b-ball_bounce .b-ball__right.bounce+.b-ball__i{transform:rotate(9deg)}
+.b-ball_bounce.bounce1>.b-ball__i{transform:rotate(6deg)}
+.b-ball_bounce .b-ball__right.bounce1+.b-ball__i{transform:rotate(-6deg)}
+.b-ball_bounce.bounce2>.b-ball__i{transform:rotate(-3deg)}
+.b-ball_bounce .b-ball__right.bounce2+.b-ball__i{transform:rotate(3deg)}
+.b-ball_bounce.bounce3>.b-ball__i{transform:rotate(1.5deg)}
+.b-ball_bounce .b-ball__right.bounce3+.b-ball__i{transform:rotate(-1.5deg)}
+.resp-screen.resp-full-window.full-window-size { z-index: 999; }
