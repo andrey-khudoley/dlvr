@@ -1,7 +1,7 @@
 /**
  * Отключает ручное редактирование для указанных полей.
  */
-var AKhJS002_disableFields = function() {
+var AKhJS002DisableFields = function() {
   var fieldIds = [
       // Заказы
       '1233250', '1110557', '1083247', '1146169', '1320498',
@@ -26,4 +26,4 @@ var AKhJS002_disableFields = function() {
   });
 };
 
-$(AKhJS002_disableFields);
+$(AKhJS002DisableFields);
