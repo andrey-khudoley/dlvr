@@ -7,28 +7,28 @@ const akhJS003Config = {
 // Селекторы и данные полей
 const akhJS003BlockSelector = '.analytics'
 const akhJS003DealFields = [
-  ['utm_source', 1322912],
-  ['utm_medium', 1322913],
-  ['utm_campaign', 1322914],
-  ['utm_content', 1322915],
-  ['utm_term', 1322916],
-  ['utm_group', 1828608],
-  ['gcpc', 1104063]
+  ['utm_source', 10101887],
+  ['utm_medium', 10101888],
+  ['utm_campaign', 10101889],
+  ['utm_content', 10101891],
+  ['utm_term', 10101890],
+  ['utm_group', 10101892],
+  ['gcpc', 10101899]
 ]
 const akhJS003UserFields = [
-  ['sb_161749_id', 944963],
-  ['sb_304432_id', 10101726],
-  ['sb_project', 10101727],
-  ['tg_username', 964664],
-  ['tg_id', 10087984],
-  ['utm_source', 298471],
-  ['utm_medium', 775829],
-  ['utm_campaign', 775830],
-  ['utm_content', 1885126],
-  ['utm_term', 1764582],
-  ['utm_group', 1885127]
+  ['sb_286940_id', 10101734],
+  ['sb_294495_id', 10101735],
+  ['sb_project', 10101736],
+  ['tg_username', 10101732],
+  ['tg_id', 10101768],
+  ['utm_source', 10101812],
+  ['utm_medium', 10101813],
+  ['utm_campaign', 10101814],
+  ['utm_content', 10101816],
+  ['utm_term', 10101815],
+  ['utm_group', 10101817]
 ]
-const akhJS003UrlField = ['loc', 805382]
+const akhJS003UrlField = ['loc', 10101886]
 
 /**
  * Выводит сообщения в консоль.

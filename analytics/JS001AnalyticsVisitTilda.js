@@ -18,10 +18,10 @@ window.AKhJS001Control = {
  * @param {string} message Сообщение для логирования.
  * @param {boolean} isError Указывает, является ли сообщение ошибкой.
  */
-function AKhJS001Log(message, isError = false) {
+function AKhJS001Log (message, isError = false) {
   if (window.AKhJS001Control && window.AKhJS001Control.debug) {
-    const logFunction = isError ? console.error : console.log;
-    logFunction(`AKh - js001: ${message}`);
+    const logFunction = isError ? console.error : console.log
+    logFunction(`AKh - js001: ${message}`)
   }
 }
 
@@ -30,25 +30,25 @@ function AKhJS001Log(message, isError = false) {
  * сохраняет UUID в куки, если он не существует.
  * @returns {string} UUID пользователя.
  */
-function AKhJS001GetOrCreateUUID() {
+function AKhJS001GetOrCreateUUID () {
   // Пытаемся найти существующий UUID в куки
-  const existingUUID = document.cookie.split('; ').find((row) => row.startsWith('akhUserUUID='));
+  const existingUUID = document.cookie.split('; ').find((row) => row.startsWith('akhUserUUID='))
   if (existingUUID) {
-    const uuid = existingUUID.split('=')[1];
-    AKhJS001Log(`Используется существующий UUID: ${uuid}`);
-    return uuid;
+    const uuid = existingUUID.split('=')[1]
+    AKhJS001Log(`Используется существующий UUID: ${uuid}`)
+    return uuid
   }
 
   // Функция для генерации шестнадцатеричного числа заданной длины
-  const hex = (length) => Array.from({ length }, () => Math.floor(Math.random() * 16).toString(16)).join('');
+  const hex = (length) => Array.from({ length }, () => Math.floor(Math.random() * 16).toString(16)).join('')
 
   // Формируем UUID в соответствии со стандартом UUID v4
-  const newUUID = `${hex(8)}-${hex(4)}-4${hex(3)}-${[8, 9, 'a', 'b'][Math.floor(Math.random() * 4)]}${hex(3)}-${hex(12)}`;
+  const newUUID = `${hex(8)}-${hex(4)}-4${hex(3)}-${[8, 9, 'a', 'b'][Math.floor(Math.random() * 4)]}${hex(3)}-${hex(12)}`
 
   // Сохраняем UUID в куки
-  document.cookie = `akhUserUUID=${newUUID}; max-age=${30 * 24 * 60 * 60}; path=/`;
-  AKhJS001Log(`Сгенерирован новый UUID: ${newUUID}`);
-  return newUUID;
+  document.cookie = `akhUserUUID=${newUUID}; max-age=${30 * 24 * 60 * 60}; path=/`
+  AKhJS001Log(`Сгенерирован новый UUID: ${newUUID}`)
+  return newUUID
 }
 
 /**
@@ -56,25 +56,25 @@ function AKhJS001GetOrCreateUUID() {
  * Возвращает `null` в случае неудачи или если время ожидания истекло.
  * @returns {Promise<string|null>} Промис. IP-адрес или `null`.
  */
-async function AKhJS001FetchUserIP() {
+async function AKhJS001FetchUserIP () {
   try {
-    AKhJS001Log('Получение IP-адреса пользователя...');
+    AKhJS001Log('Получение IP-адреса пользователя...')
 
     const timeoutPromise = new Promise((resolve) => {
-      setTimeout(() => resolve(), 10000);
-    });
+      setTimeout(() => resolve(), 10000)
+    })
 
     const fetchPromise = fetch('https://api.ipify.org?format=json')
       .then((response) => response.json())
       .then((data) => {
-        AKhJS001Log(`IP-адрес пользователя: ${data.ip}`);
-        return data.ip;
-      });
+        AKhJS001Log(`IP-адрес пользователя: ${data.ip}`)
+        return data.ip
+      })
 
-    return await Promise.race([fetchPromise, timeoutPromise]) || null;
+    return await Promise.race([fetchPromise, timeoutPromise]) || null
   } catch (error) {
-    AKhJS001Log('Ошибка при получении IP', true, error);
-    return null;
+    AKhJS001Log('Ошибка при получении IP', true, error)
+    return null
   }
 }
 
@@ -83,29 +83,29 @@ async function AKhJS001FetchUserIP() {
  * @param {string} url Адрес сервера.
  * @param {Object} data Данные для отправки.
  */
-async function AKhJS001SendPostRequest(url, data) {
+async function AKhJS001SendPostRequest (url, data) {
   try {
-    AKhJS001Log(`Отправка POST-запроса на: ${url}`);
-    AKhJS001Log(`Данные запроса: ${JSON.stringify(data)}`);
+    AKhJS001Log(`Отправка POST-запроса на: ${url}`)
+    AKhJS001Log(`Данные запроса: ${JSON.stringify(data)}`)
     const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        [window.AKhJS001Auth.authKey]: window.AKhJS001Auth.authValue,
+        [window.AKhJS001Auth.authKey]: window.AKhJS001Auth.authValue
       },
-      body: JSON.stringify(data),
-    });
+      body: JSON.stringify(data)
+    })
 
-    const contentType = response.headers.get('content-type');
+    const contentType = response.headers.get('content-type')
     if (contentType && contentType.includes('application/json')) {
-      const result = await response.json();
-      AKhJS001Log(`Ответ сервера: ${JSON.stringify(result)}`);
+      const result = await response.json()
+      AKhJS001Log(`Ответ сервера: ${JSON.stringify(result)}`)
     } else {
-      const textResponse = await response.text();
-      AKhJS001Log(`Ответ сервера (не JSON): ${textResponse}`);
+      const textResponse = await response.text()
+      AKhJS001Log(`Ответ сервера (не JSON): ${textResponse}`)
     }
   } catch (error) {
-    AKhJS001Log(`Ошибка при отправке POST-запроса: ${error}`, true);
+    AKhJS001Log(`Ошибка при отправке POST-запроса: ${error}`, true)
   }
 }
 
@@ -113,13 +113,13 @@ async function AKhJS001SendPostRequest(url, data) {
  * Извлекает URL и параметры текущей страницы.
  * @returns {{url: string, params: Object}} Объект, содержащий URL и параметры страницы.
  */
-function AKhJS001ExtractUrlAndParams() {
-  const currentUrl = window.location.origin + window.location.pathname;
-  const urlParams = new URLSearchParams(window.location.search);
-  const params = Object.fromEntries(urlParams.entries());
-  AKhJS001Log(`Текущий URL и параметры: ${currentUrl}, ${JSON.stringify(params)}`);
+function AKhJS001ExtractUrlAndParams () {
+  const currentUrl = window.location.origin + window.location.pathname
+  const urlParams = new URLSearchParams(window.location.search)
+  const params = Object.fromEntries(urlParams.entries())
+  AKhJS001Log(`Текущий URL и параметры: ${currentUrl}, ${JSON.stringify(params)}`)
 
-  return { url: currentUrl, params };
+  return { url: currentUrl, params }
 }
 
 /**
@@ -127,56 +127,56 @@ function AKhJS001ExtractUrlAndParams() {
  * @param {number} ms Время ожидания в миллисекундах.
  * @returns {Promise<void>} Промис, который разрешится после указанного времени.
  */
-function AKhJS001WaitFor(ms) {
+function AKhJS001WaitFor (ms) {
   return new Promise((resolve) => {
-    setTimeout(() => resolve(undefined), ms);
-  });
+    setTimeout(() => resolve(undefined), ms)
+  })
 }
 
 /**
  * Асинхронно ожидает определения конфигурационных объектов.
  * @returns {Promise<boolean>} Промис, который разрешится с true, если объекты найдены, иначе false.
  */
-async function AKhJS001WaitForConfig() {
-  const maxWaitTime = 5000; // Максимальное время ожидания в миллисекундах
-  const checkInterval = 100; // Интервал проверки наличия объектов
+async function AKhJS001WaitForConfig () {
+  const maxWaitTime = 5000 // Максимальное время ожидания в миллисекундах
+  const checkInterval = 100 // Интервал проверки наличия объектов
 
-  let elapsedTime = 0;
+  let elapsedTime = 0
   while (elapsedTime < maxWaitTime) {
     if (typeof window.AKhJS001Auth !== 'undefined' && typeof window.AKhJS001Control !== 'undefined') {
-      return true; // Конфигурационные объекты найдены
+      return true // Конфигурационные объекты найдены
     }
     // eslint-disable-next-line no-await-in-loop
-    await AKhJS001WaitFor(checkInterval);
-    elapsedTime += checkInterval;
+    await AKhJS001WaitFor(checkInterval)
+    elapsedTime += checkInterval
   }
-  return false;
+  return false
 }
 
 /**
  * Инициализирует скрипт после загрузки документа,
  * убедившись, что конфигурационные объекты доступны.
  */
-async function AKhJS001InitScript() {
+async function AKhJS001InitScript () {
   if (!await AKhJS001WaitForConfig()) {
-    console.error('AKh - js001: Конфигурационные объекты не были определены в течение 5 секунд.');
-    return;
+    console.error('AKh - js001: Конфигурационные объекты не были определены в течение 5 секунд.')
+    return
   }
 
   if (!window.AKhJS001Control.enable) {
-    AKhJS001Log('Скрипт отключен');
-    return;
+    AKhJS001Log('Скрипт отключен')
+    return
   }
 
-  AKhJS001Log('Скрипт инициализирован');
-  const uuid = AKhJS001GetOrCreateUUID();
-  const userIP = await AKhJS001FetchUserIP();
-  const { url, params } = AKhJS001ExtractUrlAndParams();
+  AKhJS001Log('Скрипт инициализирован')
+  const uuid = AKhJS001GetOrCreateUUID()
+  const userIP = await AKhJS001FetchUserIP()
+  const { url, params } = AKhJS001ExtractUrlAndParams()
   const data = {
-    uuid, userIP, url, params,
-  };
+    uuid, userIP, url, params
+  }
 
-  AKhJS001SendPostRequest(window.AKhJS001Auth.server, data);
+  AKhJS001SendPostRequest(window.AKhJS001Auth.server, data)
 }
 
-AKhJS001InitScript();
+AKhJS001InitScript()
