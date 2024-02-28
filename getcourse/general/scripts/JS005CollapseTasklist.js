@@ -11,7 +11,9 @@ function JS005handle () {
   const shouldUpdate = pathsToUpdate.some(path => currentPagePath.includes(path))
 
   if (shouldUpdate) {
-    $('.task-form').addClass('task-form-closed')
+    setTimeout(function () {
+      $('.task-form').addClass('task-form-closed')
+    }, 1000)
   }
 }
 
