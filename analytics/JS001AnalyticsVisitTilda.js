@@ -27,28 +27,39 @@ function AKhJS001Log (message, isError = false) {
 
 /**
  * Получает из куки или генерирует UUID,
- * сохраняет UUID в куки, если он не существует.
+ * сохраняет UUID в куки и в переменной window, если он не существует.
  * @returns {string} UUID пользователя.
  */
 function AKhJS001GetOrCreateUUID () {
-  // Пытаемся найти существующий UUID в куки
-  const existingUUID = document.cookie.split('; ').find((row) => row.startsWith('akhUserUUID='))
-  if (existingUUID) {
-    const uuid = existingUUID.split('=')[1]
-    AKhJS001Log(`Используется существующий UUID: ${uuid}`)
+  let uuid
+
+  // Пытаемся найти существующий UUID в переменной window
+  if (window.AKhUUID) {
+    uuid = window.AKhUUID
+    AKhJS001Log(`Используется существующий UUID из window: ${uuid}`)
     return uuid
   }
 
-  // Функция для генерации шестнадцатеричного числа заданной длины
-  const hex = (length) => Array.from({ length }, () => Math.floor(Math.random() * 16).toString(16)).join('')
+  // Пытаемся найти существующий UUID в куки
+  const existingUUID = document.cookie.split('; ').find(row => row.startsWith('akhUserUUID='))
+  if (existingUUID) {
+    uuid = existingUUID.split('=')[1]
+  } else {
+    // Функция для генерации шестнадцатеричного числа заданной длины
+    const hex = length => Array.from({ length }, () => Math.floor(Math.random() * 16).toString(16)).join('')
 
-  // Формируем UUID в соответствии со стандартом UUID v4
-  const newUUID = `${hex(8)}-${hex(4)}-4${hex(3)}-${[8, 9, 'a', 'b'][Math.floor(Math.random() * 4)]}${hex(3)}-${hex(12)}`
+    // Формируем UUID в соответствии со стандартом UUID v4
+    uuid = `${hex(8)}-${hex(4)}-4${hex(3)}-${[8, 9, 'a', 'b'][Math.floor(Math.random() * 4)]}${hex(3)}-${hex(12)}`
 
-  // Сохраняем UUID в куки
-  document.cookie = `akhUserUUID=${newUUID}; max-age=${30 * 24 * 60 * 60}; path=/`
-  AKhJS001Log(`Сгенерирован новый UUID: ${newUUID}`)
-  return newUUID
+    // Сохраняем UUID в куки
+    document.cookie = `akhUserUUID=${uuid}; max-age=${30 * 24 * 60 * 60}; path=/`
+    AKhJS001Log(`Сгенерирован новый UUID: ${uuid}`)
+  }
+
+  // Сохраняем или обновляем UUID в переменной window
+  window.AKhUUID = uuid
+
+  return uuid
 }
 
 /**
