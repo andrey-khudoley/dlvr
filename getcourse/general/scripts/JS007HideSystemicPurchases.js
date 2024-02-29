@@ -47,6 +47,6 @@ function JS007handle () {
 }
 
 // Вызов главной функции в конце скрипта
-document.addEventListener('load', function () {
+setTimeout(function () {
   JS007handle()
-})
+}, 1000)
