@@ -47,4 +47,6 @@ function JS006handle () {
 }
 
 // Вызов главной функции в конце скрипта
-JS006handle()
+document.addEventListener('load', function () {
+  JS006handle()
+})
