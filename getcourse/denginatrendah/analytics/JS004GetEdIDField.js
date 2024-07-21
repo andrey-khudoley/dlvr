@@ -5,7 +5,7 @@ const USER_LASTREG_ID = '1764632'
 const DEAL_EDID = '1551887'
 const DEAL_EDID_BKP = '10097754'
 const DEAL_SERVICE = '1635812'
-const DEBUG = true
+const DEBUG = false
 
 /**
  * Создает скрытые поля для передачи данных в форму.
@@ -58,7 +58,7 @@ function akhJS004AddFields () {
     parent.removeChild(item)
 
     if (DEBUG) {
-      console.log(`Processed .service_info element. Deal Input: ${DEAL_SERVICE}=${value}, User Input: ${USER_LASTREG_ID}=${value}`)
+      console.log(`Processed .service_info element. Deal Input: ${DEAL_SERVICE}=${value}`)
     }
   })
 }
