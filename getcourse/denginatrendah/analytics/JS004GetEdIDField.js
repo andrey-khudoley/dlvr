@@ -1,8 +1,10 @@
 // Control panel for the script configuration
-const BLOCK_SELECTOR_ED_ID = '.ed_id'
+const BLOCK_SELECTOR_ANALYTICS_INFO = '.analytics_info'
+const BLOCK_SELECTOR_SERVICE = '.service_info'
 const USER_LASTREG_ID = '1764632'
-const DEAL_EDID = '1551887'
-const DEAL_EDID_BKP = '10097754'
+const DEAL_ANALYTICS_INFO = '1551887'
+const DEAL_ANALYTICS_INFO_BKP = '10097754'
+const DEAL_SERVICE = '1635812'
 const DEBUG = false
 
 /**
@@ -22,16 +24,16 @@ function akhJS004CreateHiddenInput (name, id, value) {
 }
 
 /**
- * Обрабатывает добавление скрытых полей ввода на основе конфигурации.
+ * Обрабатывает добавление скрытых полей ввода на основе конфигурации для analytics_info.
  */
-function akhJS004AddFieldsEdId () {
-  const edIdElements = document.querySelectorAll(BLOCK_SELECTOR_ED_ID)
+function akhJS004AddFieldsAnalyticsInfo () {
+  const analyticsInfoElements = document.querySelectorAll(BLOCK_SELECTOR_ANALYTICS_INFO)
 
-  // Обработка элементов с классом .ed_id
-  edIdElements.forEach((item) => {
+  // Обработка элементов с классом .analytics_info
+  analyticsInfoElements.forEach((item) => {
     const value = item.getAttribute('value')
-    const dealInput = akhJS004CreateHiddenInput('dealCustomFields', DEAL_EDID, value)
-    const bkpInput = akhJS004CreateHiddenInput('dealCustomFields', DEAL_EDID_BKP, value)
+    const dealInput = akhJS004CreateHiddenInput('dealCustomFields', DEAL_ANALYTICS_INFO, value)
+    const bkpInput = akhJS004CreateHiddenInput('dealCustomFields', DEAL_ANALYTICS_INFO_BKP, value)
     const userInput = akhJS004CreateHiddenInput('userCustomFields', USER_LASTREG_ID, value)
 
     const parent = item.parentElement
@@ -41,9 +43,33 @@ function akhJS004AddFieldsEdId () {
     parent.removeChild(item)
 
     if (DEBUG) {
-      console.log(`Processed .ed_id element. Deal Input: ${DEAL_EDID}=${value}, User Input: ${USER_LASTREG_ID}=${value}`)
+      console.log(`Processed .analytics_info element. Deal Input: ${DEAL_ANALYTICS_INFO}=${value}, User Input: ${USER_LASTREG_ID}=${value}`)
     }
   })
 }
 
-window.addEventListener('DOMContentLoaded', akhJS004AddFieldsEdId)
+/**
+ * Обрабатывает добавление скрытых полей ввода на основе конфигурации для service.
+ */
+function akhJS004AddFieldsService () {
+  const serviceElements = document.querySelectorAll(BLOCK_SELECTOR_SERVICE)
+
+  // Обработка элементов с классом .service_info
+  serviceElements.forEach((item) => {
+    const value = item.getAttribute('value')
+    const dealInput = akhJS004CreateHiddenInput('dealCustomFields', DEAL_SERVICE, value)
+
+    const parent = item.parentElement
+    parent.insertBefore(dealInput, item)
+    parent.removeChild(item)
+
+    if (DEBUG) {
+      console.log(`Processed .service_info element. Deal Input: ${DEAL_SERVICE}=${value}, User Input: ${USER_LASTREG_ID}=${value}`)
+    }
+  })
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  akhJS004AddFieldsAnalyticsInfo()
+  akhJS004AddFieldsService()
+})
