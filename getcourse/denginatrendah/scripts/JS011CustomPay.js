@@ -1,7 +1,6 @@
 const js011Config = {
   PARAM_NAME_FOR_CUSTOM_PAY: 'custom_pay_value',
   NEED_WRITE_CUSTOM_PAY_VALUE_IN_FIELD: 1,
-  HIDDEN_FIELDS_BLOCK_SELECTOR: '.hidden-fields',
   ID_FIELD_DEAL_CUSTOM_PAY: '10397166',
   TYPE_FIELD_DEAL_CUSTOM_PAY: 'deal',
   DEBUG: false
@@ -68,7 +67,7 @@ const JS011SetCustomPayInDeal = (DEAL_CUSTOM_PAY_VALUE = 990) => {
   JS011AddSearchParamsToURL(js011Config.PARAM_NAME_FOR_CUSTOM_PAY, customPayValue)
 
   if (js011Config.NEED_WRITE_CUSTOM_PAY_VALUE_IN_FIELD === 1) {
-    const hiddenFieldsBlock = document.querySelectorAll(js011Config.HIDDEN_FIELDS_BLOCK_SELECTOR)
+    const hiddenFieldsBlock = document.querySelectorAll('form')
 
     if (hiddenFieldsBlock.length) {
       const inputCustomPay = JS011CreateHiddenInputField(
@@ -78,9 +77,9 @@ const JS011SetCustomPayInDeal = (DEAL_CUSTOM_PAY_VALUE = 990) => {
       )
 
       hiddenFieldsBlock.forEach((item) => {
-        item.append(inputCustomPay)
+        item.appendChild(inputCustomPay)
       })
-      JS011Log(`Appended hidden input field to ${js011Config.HIDDEN_FIELDS_BLOCK_SELECTOR}`)
+      JS011Log('Appended hidden input field')
     }
   }
 }
