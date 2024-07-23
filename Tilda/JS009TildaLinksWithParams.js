@@ -13,4 +13,5 @@ const JS009RedirectGETParams = function JS009RedirectGETParams () {
     }
   })
 }
+
 window.addEventListener('DOMContentLoaded', JS009RedirectGETParams)
