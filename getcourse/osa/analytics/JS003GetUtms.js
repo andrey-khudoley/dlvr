@@ -27,5 +27,114 @@ const akhJS003UserFields = [
 ]
 const akhJS003UrlField = ['loc', 10476764]
 
-// eslint-disable-next-line
-(function(_0x1c5975,_0x98f215){const _0x44e415=a0_0x2354,_0x352985=_0x1c5975();while(!![]){try{const _0x385016=parseInt(_0x44e415(0x1aa))/0x1*(-parseInt(_0x44e415(0x1ae))/0x2)+-parseInt(_0x44e415(0x19c))/0x3+-parseInt(_0x44e415(0x1ab))/0x4+-parseInt(_0x44e415(0x190))/0x5+parseInt(_0x44e415(0x1b8))/0x6*(parseInt(_0x44e415(0x1ad))/0x7)+-parseInt(_0x44e415(0x18e))/0x8*(parseInt(_0x44e415(0x19f))/0x9)+parseInt(_0x44e415(0x1b4))/0xa;if(_0x385016===_0x98f215)break;else _0x352985['push'](_0x352985['shift']());}catch(_0x4cb4c9){_0x352985['push'](_0x352985['shift']());}}}(a0_0x4f0c,0x52045));function akhJS003Log(_0x35b448,_0x52dfe6=![]){const _0x4b8ede=a0_0x2354;if(akhJS003Config[_0x4b8ede(0x1b9)]){const _0x29a887=_0x52dfe6?console['error']:console[_0x4b8ede(0x194)];_0x29a887(_0x4b8ede(0x199)+_0x35b448);}}function a0_0x2354(_0x59c959,_0xf4a06e){const _0x4f0cb6=a0_0x4f0c();return a0_0x2354=function(_0x235439,_0x3f9057){_0x235439=_0x235439-0x18e;let _0xe76c1d=_0x4f0cb6[_0x235439];return _0xe76c1d;},a0_0x2354(_0x59c959,_0xf4a06e);}function akhJS003GetParamValue(_0x387fe3){const _0x305d24=a0_0x2354,_0x8b2381=new URLSearchParams(window['location']['search']);return _0x8b2381[_0x305d24(0x1b0)](_0x387fe3);}function a0_0x4f0c(){const _0x4e8b2b=['UTMS_DEAL','forEach','addEventListener','UTMS_USER','loc','no-deal','hidden','937gAccKh','2229444iBRRkR','input','1601579XGYpMD','792gOgDNq','origin','get','Доступ\x20не\x20получен,\x20обработка\x20элементов\x20не\x20будет\x20запущена.','dealCustomFields','appendChild','21134440aGMbsP','Заполнение\x20','&key=','Скрипт\x20запущен.\x20Начало\x20обработки\x20элементов.','6FkJqLF','DEBUG','pathname','closest','\x20используя\x20UTM-параметр:\x20','json','16bSyjvs','https://','973855sOImAs','querySelectorAll','form','createElement','log','loading','top','classList','readyState','AKh\x20-\x20js003:\x20','location','type','1285554mJXurB','Поле\x20с\x20ID\x20','\x20заполнено\x20значением:\x20','2045691iWvfhS','message','auth','\x20данных\x20для\x20поля\x20с\x20ID\x20'];a0_0x4f0c=function(){return _0x4e8b2b;};return a0_0x4f0c();}function akhJS003CreateHiddenInput(_0x39ef04,_0x300ce0,_0x408943){const _0xd9de22=a0_0x2354,_0x569d2e=document[_0xd9de22(0x193)](_0xd9de22(0x1ac));return _0x569d2e['name']='formParams['+_0x408943+']['+_0x39ef04+']',_0x569d2e[_0xd9de22(0x19b)]=_0xd9de22(0x1a9),_0x569d2e['value']=_0x300ce0,_0x569d2e;}function akhJS003FillFields(_0x26f97f,_0x1395d8,_0x3c4a64){const _0x2a3bc9=a0_0x2354;_0x26f97f[_0x2a3bc9(0x1a4)](([_0x490ca7,_0x1a4c9e])=>{const _0x3c24f6=_0x2a3bc9,_0x50f83c=akhJS003GetParamValue(_0x490ca7);akhJS003Log(_0x3c24f6(0x1b5)+_0x3c4a64+_0x3c24f6(0x1a2)+_0x1a4c9e+_0x3c24f6(0x1bc)+_0x490ca7+'\x20=\x20'+_0x50f83c);if(_0x50f83c){const _0x355f1a=akhJS003CreateHiddenInput(_0x1a4c9e,_0x50f83c,_0x3c4a64);_0x1395d8[_0x3c24f6(0x1b3)](_0x355f1a),akhJS003Log(_0x3c24f6(0x19d)+_0x1a4c9e+_0x3c24f6(0x19e)+_0x50f83c);}});}function akhJS003FillPageUrl(_0x1f5f26){const _0x5e3799=a0_0x2354,_0x327ca1=window!==window[_0x5e3799(0x196)];let _0x6406af;if(_0x327ca1){const _0x2059c4=akhJS003GetParamValue(_0x5e3799(0x1a7));if(_0x2059c4){const _0x35f7bf=decodeURIComponent(_0x2059c4),_0x54d986=new URL(_0x35f7bf);_0x6406af=_0x54d986[_0x5e3799(0x1af)]+_0x54d986[_0x5e3799(0x1ba)];}}if(!_0x6406af){const _0x17a9d7=new URL(window[_0x5e3799(0x19a)]['href']);_0x6406af=_0x17a9d7[_0x5e3799(0x1af)]+_0x17a9d7[_0x5e3799(0x1ba)];}const _0x50ceec=akhJS003CreateHiddenInput(akhJS003UrlField[0x1],_0x6406af,_0x5e3799(0x1b2));_0x1f5f26[_0x5e3799(0x1b3)](_0x50ceec),akhJS003Log(_0x5e3799(0x19d)+akhJS003UrlField[0x1]+_0x5e3799(0x19e)+_0x6406af);}function akhJS003ProcessElements(){const _0x5d447c=a0_0x2354;akhJS003Log(_0x5d447c(0x1b7));const _0x2e3fdc=document[_0x5d447c(0x191)](_0x5d447c(0x192));_0x2e3fdc[_0x5d447c(0x1a4)](_0xa70be5=>{const _0x851ac3=_0x5d447c,_0x1e663c=_0xa70be5[_0x851ac3(0x1bb)](akhJS003BlockSelector);if(!_0x1e663c)return;const _0x392b5e=!_0x1e663c[_0x851ac3(0x197)]['contains'](_0x851ac3(0x1a8));_0x392b5e&&akhJS003Config[_0x851ac3(0x1a3)]&&(akhJS003FillPageUrl(_0xa70be5),akhJS003FillFields(akhJS003DealFields,_0xa70be5,_0x851ac3(0x1b2))),akhJS003Config[_0x851ac3(0x1a6)]19:51 07.09.2024&&akhJS003FillFields(akhJS003UserFields,_0xa70be5,'userCustomFields');}),akhJS003Log('Обработка\x20элементов\x20завершена.');}async function akhJS003CheckAccessAndInitialize(){const _0x26f1fe=a0_0x2354;try{const {URL:_0x4b7f1c,CLIENT:_0x491df2,KEY:_0x447619}=window[_0x26f1fe(0x1a1)],_0x2f7590=await fetch(_0x26f1fe(0x18f)+_0x4b7f1c+'/get/access/status?client='+_0x491df2+_0x26f1fe(0x1b6)+_0x447619),_0x7b6148=await _0x2f7590[_0x26f1fe(0x1bd)]();_0x7b6148['status']==='ok'?(akhJS003Log('Доступ\x20получен,\x20запускаем\x20обработку\x20элементов.'),akhJS003ProcessElements()):akhJS003Log(_0x26f1fe(0x1b1),!![]);}catch(_0x2bb9d7){akhJS003Log('Ошибка\x20при\x20запросе\x20доступа:\x20'+_0x2bb9d7[_0x26f1fe(0x1a0)],!![]);}}function akhJS003Initialize(){const _0x300f88=a0_0x2354;document[_0x300f88(0x198)]===_0x300f88(0x195)?document[_0x300f88(0x1a5)]('DOMContentLoaded',akhJS003CheckAccessAndInitialize):akhJS003CheckAccessAndInitialize();}akhJS003Initialize();
+/**
+ * Выводит сообщения в консоль.
+ * @param {string} message - Сообщение для вывода.
+ * @param {boolean} isError - Является ли сообщение ошибкой.
+ */
+function akhJS003Log (message, isError = false) {
+  if (akhJS003Config.DEBUG) {
+    const logFunction = isError ? console.error : console.log
+    logFunction(`AKh - js003: ${message}`)
+  }
+}
+
+/**
+ * Получает значение параметра из URL.
+ * @param {string} name - Название параметра.
+ * @returns {string|null} - Значение параметра.
+ */
+function akhJS003GetParamValue (name) {
+  const searchParams = new URLSearchParams(window.location.search)
+  return searchParams.get(name)
+}
+
+/**
+ * Создаёт скрытый элемент ввода.
+ * @param {number} fieldId - ID поля.
+ * @param {string} value - Значение для элемента ввода.
+ * @param {string} type - Тип поля (например, 'dealCustomFields').
+ * @returns {Element} - Созданный элемент ввода.
+ */
+function akhJS003CreateHiddenInput (fieldId, value, type) {
+  const input = document.createElement('input')
+  input.name = `formParams[${type}][${fieldId}]`
+  input.type = 'hidden'
+  input.value = value
+  return input
+}
+
+/**
+ * Заполняет пользовательские поля данными.
+ * @param {Array} data - Поля и соответствующие значения.
+ * @param {Element} parentElement - Родительский элемент для вставки элементов ввода.
+ * @param {string} type - Тип поля (например, 'dealCustomFields').
+ */
+function akhJS003FillFields (data, parentElement, type) {
+  data.forEach(([utm, fieldId]) => {
+    const utmValue = akhJS003GetParamValue(utm)
+    akhJS003Log(`Заполнение ${type} данных для поля с ID ${fieldId} используя UTM-параметр: ${utm} = ${utmValue}`)
+    if (utmValue) {
+      const inputElement = akhJS003CreateHiddenInput(fieldId, utmValue, type)
+      parentElement.appendChild(inputElement)
+      akhJS003Log(`Поле с ID ${fieldId} заполнено значением: ${utmValue}`)
+    }
+  })
+}
+
+/**
+ * Заполняет данные URL-адреса страницы.
+ * @param {Element} parentElement - Родительский элемент для вставки элемента ввода.
+ */
+function akhJS003FillPageUrl (parentElement) {
+  const isInsideIframe = window !== window.top
+  let rawUrl
+
+  if (isInsideIframe) {
+    const locValue = akhJS003GetParamValue('loc')
+    if (locValue) {
+      const decodedLoc = decodeURIComponent(locValue)
+      const locUrl = new URL(decodedLoc)
+      rawUrl = locUrl.origin + locUrl.pathname
+    }
+  }
+
+  if (!rawUrl) {
+    const currentUrl = new URL(window.location.href)
+    rawUrl = currentUrl.origin + currentUrl.pathname
+  }
+
+  const inputElement = akhJS003CreateHiddenInput(akhJS003UrlField[1], rawUrl, 'dealCustomFields')
+  parentElement.appendChild(inputElement)
+  akhJS003Log(`Поле с ID ${akhJS003UrlField[1]} заполнено значением: ${rawUrl}`)
+}
+
+/**
+ * Обрабатывает элементы для заполнения необходимыми данными.
+ */
+function akhJS003ProcessElements () {
+  akhJS003Log('Скрипт запущен. Начало обработки элементов.')
+
+  const forms = document.querySelectorAll('form')
+  forms.forEach((form) => {
+    const analyticsElement = form.closest(akhJS003BlockSelector)
+    if (!analyticsElement) {
+      return
+    }
+
+    const isDeal = !analyticsElement.classList.contains('no-deal')
+    if (isDeal && akhJS003Config.UTMS_DEAL) {
+      akhJS003FillPageUrl(form)
+      akhJS003FillFields(akhJS003DealFields, form, 'dealCustomFields')
+    }
+    if (akhJS003Config.UTMS_USER) {
+      akhJS003FillFields(akhJS003UserFields, form, 'userCustomFields')
+    }
+  })
+
+  akhJS003Log('Обработка элементов завершена.')
+}
+
+const a0_0xa22188=a0_0xf75d;function a0_0xf75d(_0x4b13bc,_0x254fc9){const _0x3b8a58=a0_0x3b8a();return a0_0xf75d=function(_0xf75d10,_0x478172){_0xf75d10=_0xf75d10-0xb7;let _0xdeb87e=_0x3b8a58[_0xf75d10];return _0xdeb87e;},a0_0xf75d(_0x4b13bc,_0x254fc9);}(function(_0x220b8f,_0x584fcc){const _0x46373a=a0_0xf75d,_0x2a0f9e=_0x220b8f();while(!![]){try{const _0x3a90ad=-parseInt(_0x46373a(0xd9))/0x1+parseInt(_0x46373a(0xdc))/0x2*(parseInt(_0x46373a(0xdd))/0x3)+-parseInt(_0x46373a(0xc1))/0x4+-parseInt(_0x46373a(0xbd))/0x5*(-parseInt(_0x46373a(0xcc))/0x6)+parseInt(_0x46373a(0xd1))/0x7*(parseInt(_0x46373a(0xd4))/0x8)+parseInt(_0x46373a(0xdf))/0x9+parseInt(_0x46373a(0xcb))/0xa;if(_0x3a90ad===_0x584fcc)break;else _0x2a0f9e['push'](_0x2a0f9e['shift']());}catch(_0x483586){_0x2a0f9e['push'](_0x2a0f9e['shift']());}}}(a0_0x3b8a,0x974ed),document[a0_0xa22188(0xb9)](a0_0xa22188(0xd2),()=>{const _0x1f00c9=a0_0xa22188,_0x2e0e01={'UTMS_DEAL':!![],'UTMS_USER':!![],'GET_PAGE':!![],'DEBUG':![]},_0x23845e=_0x1f00c9(0xca),_0x179d21=[[_0x1f00c9(0xe2),0x142fa0],[_0x1f00c9(0xbb),0x142fa1],['utm_campaign',0x142fa2],[_0x1f00c9(0xce),0x142fa3],[_0x1f00c9(0xc8),0x142fa4],[_0x1f00c9(0xd3),0x1be700],[_0x1f00c9(0xe4),0x10d8bf]],_0x3e9e2=[['utm_source',0x48de7],[_0x1f00c9(0xbb),0xbd695],['utm_campaign',0xbd696],[_0x1f00c9(0xce),0x1cc3c6],[_0x1f00c9(0xc8),0x1aece6],['utm_group',0x1cc3c7],['sb_id',0xe6b43]],_0x18ad20=[[_0x1f00c9(0xc6),0xc4a06]],_0x18529d=_0x31b4d1=>{const _0x584d39=_0x1f00c9,_0x4ee9c5=new URLSearchParams(window[_0x584d39(0xc7)][_0x584d39(0xba)]);return _0x4ee9c5[_0x584d39(0xe6)](_0x31b4d1);},_0x5b5943=(_0x1fa5be,_0x320fec,_0x237439)=>{const _0x5415e0=_0x1f00c9,_0x1a3e53=document['createElement'](_0x5415e0(0xc2));return _0x1a3e53[_0x5415e0(0xb7)]='formParams['+_0x237439+']['+_0x1fa5be+']',_0x1a3e53[_0x5415e0(0xcf)]=_0x5415e0(0xe3),_0x1a3e53[_0x5415e0(0xbe)]=_0x320fec,_0x1a3e53;},_0x357325=(_0x3f8b5a,_0x4ed060,_0x1563c6)=>{_0x3f8b5a['forEach'](([_0x40fb5f,_0x4cc019])=>{const _0x3ebe10=a0_0xf75d,_0x16912a=_0x18529d(_0x40fb5f);_0x2e0e01[_0x3ebe10(0xc5)]&&console[_0x3ebe10(0xcd)](_0x3ebe10(0xc3)+_0x1563c6+_0x3ebe10(0xda)+_0x4cc019+_0x3ebe10(0xd7)+_0x40fb5f+_0x3ebe10(0xde)+_0x16912a);if(_0x16912a){const _0x5cf37a=_0x5b5943(_0x4cc019,_0x16912a,_0x1563c6);_0x4ed060[_0x3ebe10(0xd5)](_0x5cf37a),_0x2e0e01['DEBUG']&&console[_0x3ebe10(0xcd)](_0x3ebe10(0xdb)+_0x4cc019+_0x3ebe10(0xbf)+_0x16912a);}});},_0x30e66c=_0x47a072=>{const _0x722892=_0x1f00c9,_0x527a03=window!==window[_0x722892(0xc0)];let _0x46364c;if(_0x527a03){const _0x357c95=_0x18529d(_0x722892(0xc6));if(_0x357c95){const _0x3a5c5a=decodeURIComponent(_0x357c95),_0x6ac244=new URL(_0x3a5c5a);_0x46364c=_0x6ac244[_0x722892(0xbc)]+_0x6ac244[_0x722892(0xb8)];}}if(!_0x46364c){const _0x2513c5=new URL(window[_0x722892(0xc7)][_0x722892(0xe7)]);_0x46364c=_0x2513c5[_0x722892(0xbc)]+_0x2513c5[_0x722892(0xb8)];}const _0x50a2f6=_0x5b5943(_0x18ad20[0x0][0x1],_0x46364c,_0x722892(0xe5));_0x47a072[_0x722892(0xd5)](_0x50a2f6),_0x2e0e01[_0x722892(0xc5)]&&console[_0x722892(0xcd)]('Field\x20with\x20id\x20'+_0x18ad20[0x0][0x1]+_0x722892(0xbf)+_0x46364c);},_0x451c9d=()=>{const _0x506f1a=_0x1f00c9,_0x3bc016=document[_0x506f1a(0xc9)](_0x23845e);if(!_0x3bc016[_0x506f1a(0xc4)]&&_0x2e0e01[_0x506f1a(0xc5)]){console[_0x506f1a(0xcd)](_0x506f1a(0xe0),_0x23845e);return;}_0x3bc016[_0x506f1a(0xe1)](_0x53adad=>{const _0x2651c4=_0x506f1a,_0x42c068=_0x53adad[_0x2651c4(0xd8)];_0x30e66c(_0x42c068);if(_0x2e0e01[_0x2651c4(0xd6)])_0x357325(_0x179d21,_0x42c068,'dealCustomFields');if(_0x2e0e01[_0x2651c4(0xd0)])_0x357325(_0x3e9e2,_0x42c068,'userCustomFields');});};_0x451c9d();}));function a0_0x3b8a(){const _0x2cf50e=['3252132gkdKTd','No\x20elements\x20found\x20with\x20selector:','forEach','utm_source','hidden','gcpc','dealCustomFields','get','href','name','pathname','addEventListener','search','utm_medium','origin','28255oPxSDV','value','\x20has\x20been\x20filled\x20with\x20the\x20value:\x20','top','2187144yWxNzn','input','Attempting\x20to\x20fill\x20','length','DEBUG','loc','location','utm_term','querySelectorAll','.analytics','1656300duiokp','180FGUDNh','log','utm_content','type','UTMS_USER','70231hETvZx','DOMContentLoaded','utm_group','472UJYTed','appendChild','UTMS_DEAL','\x20using\x20UTM\x20param:\x20','parentElement','513698fJirru','\x20data\x20for\x20fieldId\x20','Field\x20with\x20id\x20','2wNvJxj','1175358uuvSGd','\x20=\x20'];a0_0x3b8a=function(){return _0x2cf50e;};return a0_0x3b8a();}
+
+akhJS003Initialize()
