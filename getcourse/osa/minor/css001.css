@@ -1,6 +1,12 @@
+.custom-form-editor.without-help-elems tbody tr:first-child {
+  position: relative;
+}
+
+.custom-form-editor.without-help-elems tbody tr:first-child td:first-child {
+  position: relative;
+  z-index: 1001;
+}
+
 .field-settings-editor, .control-buttons { 
   position: sticky; top: 20px; z-index: 1000; 
-}
-.dropdown-menu.add-types-list {
-  z-index: 1001;
 }
