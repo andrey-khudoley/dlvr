@@ -1,0 +1,4 @@
+.field-settings-editor, .standard-page-content .btn 
+{ 
+  position: fixed; top: 20px; z-index: 1000; 
+}
