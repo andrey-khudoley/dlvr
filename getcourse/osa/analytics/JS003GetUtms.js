@@ -1,7 +1,6 @@
 const akhJS003Config = {
   UTMS_DEAL: true,
-  UTMS_USER: true,
-  DEBUG: false
+  UTMS_USER: true
 }
 
 // Селекторы и данные полей
@@ -33,7 +32,7 @@ const akhJS003UrlField = ['loc', 10476764]
  * @param {boolean} isError - Является ли сообщение ошибкой.
  */
 function akhJS003Log (message, isError = false) {
-  if (akhJS003Config.DEBUG) {
+  if (window.debug) {
     const logFunction = isError ? console.error : console.log
     logFunction(`AKh - js003: ${message}`)
   }
