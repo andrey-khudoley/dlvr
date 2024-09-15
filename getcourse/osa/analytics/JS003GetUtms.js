@@ -1,4 +1,10 @@
 // Селекторы и данные полей
+const akhJS003Config = {
+  UTMS_DEAL: true,
+  UTMS_USER: true,
+  DEBUG: false
+}
+
 const akhJS003BlockSelector = '.analytics'
 const akhJS003DealFields = [
   ['utm_source', 10476765],
@@ -129,31 +135,11 @@ function akhJS003ProcessElements () {
   akhJS003Log('Обработка элементов завершена.')
 }
 
-/**
- * Выполняет запрос на проверку доступа и запускает скрипт только в случае успеха.
- */
-async function akhJS003CheckAccessAndInitialize () {
-  try {
-    const { URL, CLIENT, KEY } = window.auth
-    const response = await fetch(`https://${URL}/get/access/status?client=${CLIENT}&key=${KEY}`)
-    const result = await response.json()
-
-    if (result.status === 'ok') {
-      akhJS003Log('Доступ получен, запускаем обработку элементов.')
-      akhJS003ProcessElements()
-    } else {
-      akhJS003Log('Доступ не получен, обработка элементов не будет запущена.', true)
-    }
-  } catch (error) {
-    akhJS003Log('Ошибка при запросе доступа: ' + error.message, true)
-  }
-}
-
 function akhJS003Initialize () {
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', akhJS003CheckAccessAndInitialize)
+    document.addEventListener('DOMContentLoaded', akhJS003ProcessElements)
   } else {
-    akhJS003CheckAccessAndInitialize()
+    akhJS003ProcessElements()
   }
 }
 
